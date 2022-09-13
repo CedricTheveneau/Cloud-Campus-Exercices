@@ -1,0 +1,30 @@
+div:nth-child(odd) > h2 {
+  color: pink;
+}
+
+h2:hover + p {
+  color: orange;
+}
+
+div:nth-child(1) p::first-line {
+  background-color: green;
+}
+
+div:nth-child(2) {
+  border: 0.5vh solid pink;
+}
+
+div:nth-child(3) p::first-letter {
+  color: red;
+  font-size: 20px;
+  float: left;
+}
+
+div:nth-child(4) + div {
+  background-color: blue;
+}
+
+div:nth-child(4):hover::before {
+  content: ">>";
+  display: block;
+}

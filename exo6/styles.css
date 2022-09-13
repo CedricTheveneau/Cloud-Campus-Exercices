@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: O;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+div[class^="square_"] {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+div:nth-child(odd) {
+  background-color: #256ab6;
+}
+
+div:nth-child(even) {
+  background-color: #dd22aa;
+}
+
+div:nth-child(1):hover {
+  width: 250px;
+  height: 250px;
+}
+
+div:nth-child(2):hover + div:nth-child(3) {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
+
+div:nth-child(3) {
+  background-color: red;
+}
+
+div:nth-child(4) {
+  background-color: pink;
+}
+
+div:nth-child(5) {
+  background-color: yellow;
+}
+
+div:nth-child(8) {
+  background-color: orange;
+}

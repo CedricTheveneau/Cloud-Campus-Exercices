@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <p>
+          <label for="name">Nom</label>
+          <input type="text" name="name" id="name" />
+        </p>
+        <p>
+          <label for="prenom">Prénom</label>
+          <input type="text" name="prenom" id="prenom" />
+        </p>
+        <p>
+          <label for="age">Âge</label>
+          <input type="number" name="age" id="age" />
+        </p>
+        <p>
+          <label for="email">Adresse email</label>
+          <input type="email" name="email" id="email" />
+        </p>
+        <p>
+          <label for="cv">CV</label> <input type="file" name="cv" id="cv" />
+        </p>
+        <p>
+          <label for="color">Ta couleur préféré</label>
+          <input type="color" name="color" id="color" />
+        </p>
+        <p>
+          <label for="plat">Ton plat préféré</label>
+          <input list="plat_list" type="text" id="plat" name="plat" />
+          <datalist id="plat_list">
+            <option value="tartiflette">Tartiflette</option>
+            <option value="raclette">Raclette</option>
+            <option value="fondue">Fondue</option>
+          </datalist>
+        </p>
+        <fieldset>
+          <p>Où habitez-vous ?</p>
+          <p>
+            <input type="radio" id="Lyon" value="Lyon" />
+            <label for="Lyon">Lyon</label>
+          </p>
+          <p>
+            <input type="radio" id="Bordeaux" value="Bordeaux" />
+            <label for="Bordeaux">Bordeaux</label>
+          </p>
+          <p>
+            <input type="radio" id="Paris" value="Paris" />
+            <label for="Paris">Paris</label>
+          </p>
+          <p>
+            <input type="radio" id="Toulouse" value="Toulouse" />
+            <label for="Toulouse">Toulouse</label>
+          </p>
+          <p>
+            <input type="radio" id="Nîmes" value="Nîmes" />
+            <label for="Nîmes">Nîmes</label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <input type="checkbox" id="Chien" value="Chien" />
+          <label for="Chien">Chien</label>
+          <input type="checkbox" id="Chat" value="Chat" />
+          <label for="Chat">Chat</label>
+          <input type="checkbox" id="Singe" value="Singe" />
+          <label for="Singe">Singe</label>
+          <input type="checkbox" id="Gorille" value="Gorille" />
+          <label for="Gorille">Gorille</label>
+          <input type="checkbox" id="Pangolin" value="Pangolin" />
+          <label for="Pangolin">Pangolin</label>
+          <input type="checkbox" id="Requin" value="Requin" />
+          <label for="Requin">Requin</label>
+        </fieldset>
+        <button type="submit">Envoyer</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

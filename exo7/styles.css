@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Ms Madi", "cursive", sans-serif;
+  src: url(https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap);
+}
+
+body {
+  font-family: "Ms Madi", cursive;
+}

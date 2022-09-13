@@ -1,0 +1,59 @@
+* {
+  margin: 0%;
+}
+
+header {
+  height: 20%;
+}
+
+nav {
+  text-align: center;
+  padding: 2% 0;
+}
+
+a:nth-child(1) {
+  color: black;
+}
+
+a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: rgb(199, 56, 80);
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  margin: 2% 0;
+}
+
+main {
+  height: 80%;
+  background-color: lightgrey;
+  padding: 2%;
+}
+
+.line {
+  border: 1px solid grey;
+}
+
+h2:nth-child(1) {
+  background-color: black;
+  color: red;
+}
+
+h2:nth-child(3) {
+  background-color: rgb(199, 56, 80);
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  padding: 2%;
+  margin: 2% 0;
+}
+
+main p {
+  text-align: justify;
+  margin-top: 2%;
+}
