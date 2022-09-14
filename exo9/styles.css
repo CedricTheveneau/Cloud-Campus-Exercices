@@ -1,0 +1,22 @@
+nav {
+  text-align: center;
+  background-color: lightgrey;
+}
+
+a {
+  display: inline-block;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  margin: 10px;
+  background-color: red;
+  line-height: 10em;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: green;
+}

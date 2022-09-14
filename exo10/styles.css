@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 50%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: white;
+  margin-top: 2%;
+}
+
+.cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.member {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 23%;
+}
+
+img {
+  width: 60%;
+  padding-top: 5%;
+}
+
+h3 {
+  padding: 5%;
+}
+
+h4 {
+  padding: 3%;
+}

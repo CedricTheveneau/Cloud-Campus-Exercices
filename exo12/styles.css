@@ -1,0 +1,116 @@
+* {
+  margin: 0%;
+}
+
+header {
+  width: 100%;
+  background-color: lightgreen;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  width: 40%;
+  justify-content: space-evenly;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+}
+
+.section_1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+
+div[class^="card"] {
+  width: 23%;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+}
+
+div[class^="card"] img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+h1 {
+  padding-top: 2%;
+}
+
+.section_2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 97%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+div[class^="testimonial"] {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 5%;
+  padding: 2%;
+}
+
+div[class^="testimonial"] .row {
+  display: flex;
+  width: 20%;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+}
+
+.testimonial_2 {
+  text-align: end;
+}
+
+.testimonial_2 .row {
+  display: flex;
+  width: 20%;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+}
+
+footer {
+  margin-top: 5%;
+  background-color: lightgreen;
+  display: flex;
+  justify-content: space-evenly;
+  height: 150px;
+}
+
+div[class^="col_"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid;
+}
+
+div[class^="col_"] a {
+  padding-right: 50px;
+}
+
+.container_social_media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  padding: 20px;
+}
+
+.container_social_media i {
+  font-size: 20px;
+  cursor: pointer;
+}
