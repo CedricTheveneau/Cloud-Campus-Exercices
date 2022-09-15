@@ -6,21 +6,24 @@
 }
 
 body {
+  overflow-x: hidden;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 100%;
   justify-content: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  /*margin-left: 10%;
+  margin-right: 10%;*/
   margin-top: 0%;
 }
 
 header {
-  width: 100%;
+  width: 80%;
   height: 80px;
   background-color: #006280;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 nav {
@@ -28,8 +31,15 @@ nav {
   height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+.navlinks {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 a {
@@ -37,16 +47,27 @@ a {
   color: white;
 }
 
+a:hover {
+  font-size: larger;
+}
+
 .logo {
+  margin-left: -15%;
   width: 50px;
   height: 50px;
   background-color: lightcoral;
 }
 
 main {
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.title {
+  margin-bottom: -1%;
+  margin-top: 3%;
 }
 
 h2 {
@@ -72,14 +93,26 @@ h2 {
 .card img {
   width: 640px;
   height: 580px;
+  margin-top: -1%;
+  margin-bottom: -1%;
 }
 
 .card a {
   background-color: #006280;
 }
 
+#fb {
+  margin-bottom: 3%;
+}
+
+#tb {
+  margin-top: 2%;
+}
+
 footer {
   margin-top: 2%;
+  margin-bottom: -2%;
+  padding: 1%;
   background-color: #006280;
   width: 100%;
   display: flex;
@@ -88,9 +121,24 @@ footer {
   justify-content: space-between;
 }
 
+footer p {
+  width: 20%;
+}
+
+footer nav {
+  margin-right: -20%;
+}
+
 /* Page de destination */
 
+.desc {
+  color: black;
+  text-align: center;
+  width: 40%;
+}
+
 .info {
+  margin-top: -1%;
   color: black;
   text-align: center;
   width: 40%;
@@ -113,6 +161,88 @@ footer {
 
 .res {
   text-align: start;
+  margin-top: -1%;
   color: black;
   width: 95%;
+}
+
+.uline {
+  text-decoration: underline;
+}
+
+/* Contact */
+
+.map {
+  width: 300px;
+  height: 300px;
+  background-color: lightseagreen;
+}
+
+form {
+  width: 100%;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+}
+
+label {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.field {
+  width: 10%;
+  box-shadow: 2px 2px grey;
+  margin-left: 1%;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+textarea {
+  height: 100px;
+}
+
+.formtext {
+  color: black;
+}
+
+.check {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+}
+
+.bold {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  width: 15%;
+  margin-top: -1%;
+}
+
+.mw {
+  width: 100%;
+}
+
+.ra {
+  text-align: start;
+}
+
+.st {
+  margin-top: -1%;
+}
+
+#ra {
+  margin-left: -5%;
+  margin-bottom: -1%;
 }
