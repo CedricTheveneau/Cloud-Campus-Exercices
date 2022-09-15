@@ -16,6 +16,7 @@ header {
 
 main {
   width: 100%;
+  height: 80%;
   display: flex;
   flex-direction: row;
 }
@@ -24,14 +25,14 @@ nav {
   display: flex;
   flex-direction: column;
   width: 10%;
-  height: 80%;
+  height: 100%;
   background-color: lightgray;
   align-items: center;
 }
 
 .container {
   width: 90%;
-  height: 100px;
+  height: 100%;
   background-color: aqua;
 }
 
