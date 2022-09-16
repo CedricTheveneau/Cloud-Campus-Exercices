@@ -36,6 +36,7 @@ nav {
   height: 100%;
   background-color: white;
   align-items: center;
+  justify-content: center;
   border-right: solid 2px lightgrey;
   border-radius: 10%;
   overflow-y: scroll;
