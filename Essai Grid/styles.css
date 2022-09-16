@@ -1,0 +1,19 @@
+*::before::after {
+  margin: 0%;
+  padding: 0%;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 15vw 70vw 15vw;
+  grid-template-rows: 10vh 80vh 10vh;
+  background-color: aquamarine;
+}
+
+.griditems:nth-child(odd) {
+  background-color: lightcoral;
+}
+
+.griditems:nth-child(even) {
+  background-color: lightgreen;
+}
