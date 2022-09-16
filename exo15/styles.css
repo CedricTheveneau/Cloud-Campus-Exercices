@@ -1,0 +1,82 @@
+*::before::after {
+  padding: 0%;
+  margin: 0%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin-top: 0%;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  background-color: lightcoral;
+  width: 50px;
+  height: 50px;
+}
+
+nav {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navlink {
+  padding: 2%;
+  color: red;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+}
+
+.grid-item:nth-child(1) {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.big img {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-item:nth-child(4) {
+  grid-column: 3 / span 2;
+  grid-row: 2 / span 2;
+}
+
+.grid-item:nth-child(7) {
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 2;
+}
+
+.grid-item:nth-child(8) {
+  grid-column: 1 / span 4;
+}
+
+.st img {
+  display: flex;
+  width: 100vw;
+  height: 50vh;
+}
