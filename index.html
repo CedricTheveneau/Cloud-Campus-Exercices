@@ -13,6 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap"
       rel="stylesheet"
     />
+    <!-- Code coloring -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+    />
     <title>Cloud Campus - Exercices</title>
   </head>
   <body>
@@ -29,9 +34,9 @@
         <a href="#6">Exercice 6</a>
         <a href="#7">Exercice 7</a>
         <a href="#8">Exercice 8</a>
-        <a href="./exo9/index.html">Exercice 9</a>
-        <a href="./exo10/index.html">Exercice 10</a>
-        <a href="./exo11/index.html">Exercice 11</a>
+        <a href="#9">Exercice 9</a>
+        <a href="#10">Exercice 10</a>
+        <a href="#11">Exercice 11</a>
         <a href="./exo12/index.html">Exercice 12</a>
         <a href="./exo13/index.html">Exercice 13</a>
         <a href="./exo14/index.html">Exercice 14</a>
@@ -40,7 +45,65 @@
       </nav>
       <div class="container">
         <h2 id="1">Exercice 1</h2>
-        <img class="snippet" src="./website_content/exo1_snippet.png" />
+        <pre><code>&lt;!DOCTYPE html&gt;
+          &lt;html lang=&quot;fr&quot;&gt;
+            &lt;head&gt;
+              &lt;meta charset=&quot;UTF-8&quot; /&gt;
+              &lt;meta http-equiv=&quot;x-100-compatible&quot; content=&quot;IE-edge&quot; /&gt;
+            &lt;/head&gt;
+          
+            &lt;body&gt;
+              &lt;main&gt;
+                &lt;h1&gt;Exercice sur les listes&lt;/h1&gt;
+          
+                &lt;ul&gt;
+                  &lt;li&gt;Peugeot&lt;/li&gt;
+                  &lt;li&gt;Renault&lt;/li&gt;
+                  &lt;li&gt;Ford&lt;/li&gt;
+                  &lt;li&gt;Toyota&lt;/li&gt;
+                  &lt;li&gt;Mercedes&lt;/li&gt;
+                  &lt;li&gt;Lamborghini&lt;/li&gt;
+                  &lt;li&gt;Volkswagen&lt;/li&gt;
+                  &lt;li&gt;Audi&lt;/li&gt;
+                  &lt;li&gt;BMW&lt;/li&gt;
+                  &lt;li&gt;Porsche&lt;/li&gt;
+                &lt;/ul&gt;
+          
+                &lt;ol&gt;
+                  &lt;li&gt;Peugeot&lt;/li&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;508&lt;/li&gt;
+                    &lt;li&gt;308&lt;/li&gt;
+                    &lt;li&gt;208&lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;li&gt;Renault&lt;/li&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;Clio&lt;/li&gt;
+                    &lt;li&gt;Megane&lt;/li&gt;
+                    &lt;li&gt;Talisman&lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;li&gt;Ford&lt;/li&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;Mustang&lt;/li&gt;
+                    &lt;li&gt;F-150&lt;/li&gt;
+                    &lt;li&gt;Escort&lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;li&gt;Toyota&lt;/li&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;Celica&lt;/li&gt;
+                    &lt;li&gt;Supra&lt;/li&gt;
+                    &lt;li&gt;AE86&lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;li&gt;Mercedes&lt;/li&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;C63 AMG&lt;/li&gt;
+                    &lt;li&gt;AMG GT Black-Series&lt;/li&gt;
+                    &lt;li&gt;Classe E&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/ol&gt;
+              &lt;/main&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;</code></pre>
         <iframe
           src="./exo1/index.html"
           width="98%"
@@ -49,7 +112,125 @@
         ></iframe>
         <button><a href="./exo1/index.html">Voir le site</a></button>
         <h2 id="2">Exercice 2</h2>
-        <img class="snippet" src="./website_content/exo2_snippet.png" />
+        <pre><code>&lt;!DOCTYPE html&gt;
+          &lt;html lang=&quot;en&quot;&gt;
+            &lt;head&gt;
+              &lt;meta charset=&quot;UTF-8&quot; /&gt;
+              &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+              &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+              &lt;title&gt;Document&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;header&gt;
+                &lt;nav&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;&lt;a href=&quot;#toyota&quot;&gt;Toyota&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#honda&quot;&gt;Honda&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#nissan&quot;&gt;Nissan&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#ford&quot;&gt;Ford&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#chevrolet&quot;&gt;Chevrolet&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/nav&gt;
+              &lt;/header&gt;
+          
+              &lt;main&gt;
+                &lt;h2 id=&quot;toyota&quot;&gt;Toyota&lt;/h2&gt;
+                &lt;p&gt;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                  nihil aliquam dolorem tempora vel error hic, ratione dolorum deserunt
+                  consequatur est quasi maiores voluptas ipsa nisi aperiam architecto,
+                  illum ullam.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Fusce ultricies, libero sed blandit lobortis, purus dolor elementum
+                  tellus, sed pellentesque lacus magna dignissim felis. Praesent
+                  sollicitudin ac nulla in blandit. Vivamus vel tincidunt risus, id
+                  egestas nibh. Class aptent taciti sociosqu ad litora torquent per
+                  conubia nostra, per inceptos himenaeos. Sed consectetur, felis dapibus
+                  ullamcorper volutpat, enim nisl placerat lorem, quis vulputate urna
+                  tellus a mi. Sed sed nisl suscipit, eleifend orci in, ultricies augue.
+                  Donec ut odio magna. Duis egestas interdum augue. Maecenas velit est,
+                  imperdiet sed nibh in, lobortis posuere magna. Phasellus quis neque
+                  gravida, euismod turpis in, lacinia nulla. Proin luctus leo in lobortis
+                  blandit. Ut id interdum eros. Sed auctor sem ut mattis lobortis.
+                &lt;/p&gt;
+          
+                &lt;h2 id=&quot;honda&quot;&gt;Honda&lt;/h2&gt;
+                &lt;p&gt;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                  nihil aliquam dolorem tempora vel error hic, ratione dolorum deserunt
+                  consequatur est quasi maiores voluptas ipsa nisi aperiam architecto,
+                  illum ullam.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Fusce ultricies, libero sed blandit lobortis, purus dolor elementum
+                  tellus, sed pellentesque lacus magna dignissim felis. Praesent
+                  sollicitudin ac nulla in blandit. Vivamus vel tincidunt risus, id
+                  egestas nibh. Class aptent taciti sociosqu ad litora torquent per
+                  conubia nostra, per inceptos himenaeos. Sed consectetur, felis dapibus
+                  ullamcorper volutpat, enim nisl placerat lorem, quis vulputate urna
+                  tellus a mi. Sed sed nisl suscipit, eleifend orci in, ultricies augue.
+                  Donec ut odio magna. Duis egestas interdum augue. Maecenas velit est,
+                  imperdiet sed nibh in, lobortis posuere magna. Phasellus quis neque
+                  gravida, euismod turpis in, lacinia nulla. Proin luctus leo in lobortis
+                  blandit. Ut id interdum eros. Sed auctor sem ut mattis lobortis.
+                &lt;/p&gt;
+          
+                &lt;h2 id=&quot;nissan&quot;&gt;Nissan&lt;/h2&gt;
+                &lt;p&gt;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                  nihil aliquam dolorem tempora vel error hic, ratione dolorum deserunt
+                  consequatur est quasi maiores voluptas ipsa nisi aperiam architecto,
+                  illum ullam.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Fusce ultricies, libero sed blandit lobortis, purus dolor elementum
+                  tellus, sed pellentesque lacus magna dignissim felis. Praesent
+                  sollicitudin ac nulla in blandit. Vivamus vel tincidunt risus, id
+                  egestas nibh. Class aptent taciti sociosqu ad litora torquent per
+                  conubia nostra, per inceptos himenaeos. Sed consectetur, felis dapibus
+                  ullamcorper volutpat, enim nisl placerat lorem, quis vulputate urna
+                  tellus a mi. Sed sed nisl suscipit, eleifend orci in, ultricies augue.
+                  Donec ut odio magna. Duis egestas interdum augue. Maecenas velit est,
+                  imperdiet sed nibh in, lobortis posuere magna. Phasellus quis neque
+                  gravida, euismod turpis in, lacinia nulla. Proin luctus leo in lobortis
+                  blandit. Ut id interdum eros. Sed auctor sem ut mattis lobortis.
+                &lt;/p&gt;
+          
+                &lt;h2 id=&quot;ford&quot;&gt;Ford&lt;/h2&gt;
+                &lt;p&gt;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                  nihil aliquam dolorem tempora vel error hic, ratione dolorum deserunt
+                  consequatur est quasi maiores voluptas ipsa nisi aperiam architecto,
+                  illum ullam.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Fusce ultricies, libero sed blandit lobortis, purus dolor elementum
+                  tellus, sed pellentesque lacus magna dignissim felis. Praesent
+                  sollicitudin ac nulla in blandit. Vivamus vel tincidunt risus, id
+                  egestas nibh. Class aptent taciti sociosqu ad litora torquent per
+                  conubia nostra, per inceptos himenaeos. Sed consectetur, felis dapibus
+                  ullamcorper volutpat, enim nisl placerat lorem, quis vulputate urna
+                  tellus a mi. Sed sed nisl suscipit, eleifend orci in, ultricies augue.
+                  Donec ut odio magna. Duis egestas interdum augue. Maecenas velit est,
+                  imperdiet sed nibh in, lobortis posuere magna. Phasellus quis neque
+                  gravida, euismod turpis in, lacinia nulla. Proin luctus leo in lobortis
+                  blandit. Ut id interdum eros. Sed auctor sem ut mattis lobortis.
+                &lt;/p&gt;
+          
+                &lt;h2 id=&quot;chevrolet&quot;&gt;Chevrolet&lt;/h2&gt;
+                &lt;p&gt;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                  nihil aliquam dolorem tempora vel error hic, ratione dolorum deserunt
+                  consequatur est quasi maiores voluptas ipsa nisi aperiam architecto,
+                  illum ullam.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Fusce ultricies, libero sed blandit lobortis, purus dolor elementum
+                  tellus, sed pellentesque lacus magna dignissim felis. Praesent
+                  sollicitudin ac nulla in blandit. Vivamus vel tincidunt risus, id
+                  egestas nibh. Class aptent taciti sociosqu ad litora torquent per
+                  conubia nostra, per inceptos himenaeos. Sed consectetur, felis dapibus
+                  ullamcorper volutpat, enim nisl placerat lorem, quis vulputate urna
+                  tellus a mi. Sed sed nisl suscipit, eleifend orci in, ultricies augue.
+                  Donec ut odio magna. Duis egestas interdum augue. Maecenas velit est,
+                  imperdiet sed nibh in, lobortis posuere magna. Phasellus quis neque
+                  gravida, euismod turpis in, lacinia nulla. Proin luctus leo in lobortis
+                  blandit. Ut id interdum eros. Sed auctor sem ut mattis lobortis.
+                &lt;/p&gt;
+              &lt;/main&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;</code></pre>
         <iframe
           src="./exo2/index.html"
           width="98%"
@@ -58,7 +239,62 @@
         ></iframe>
         <button><a href="./exo2/index.html">Voir le site</a></button>
         <h2 id="3">Exercice 3</h2>
-        <img class="snippet" src="./website_content/exo3_snippet.png" />
+        <pre><code>&lt;!DOCTYPE html&gt;
+          &lt;html lang=&quot;en&quot;&gt;
+            &lt;head&gt;
+              &lt;meta charset=&quot;UTF-8&quot; /&gt;
+              &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+              &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+              &lt;title&gt;C&eacute;dric Theveneau&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;table&gt;
+                &lt;thead&gt;
+                  &lt;img
+                    src=&quot;https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/13/1490989538-egg.jpg?resize=768:*&quot;
+                    alt=&quot;CV picture&quot;
+                  /&gt;
+                  &lt;h2&gt;C&eacute;dric Theveneau&lt;/h2&gt;
+                  &lt;a
+                    href=&quot;https://cedrictheveneau.github.io/LeJaponDecompose/&quot;
+                    target=&quot;_blank&quot;
+                    &gt;Mon dernier site&lt;/a
+                  &gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                  &lt;tr&gt;
+                    &lt;td&gt;3X Parc aux fleurs&lt;/td&gt;
+                  &lt;/tr&gt;
+                    &lt;tr&gt;&lt;td&gt;91xxx&lt;/td&gt;
+                  &lt;/tr&gt;
+                    &lt;tr&gt;&lt;td&gt;06 xx xx xx xx&lt;/td&gt;
+                  &lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td&gt;
+                      &lt;a href=&quot;mailto:monadressemail@gmail.com&quot;&gt;Envoyez-moi un mail !&lt;/a&gt;
+                    &lt;/td&gt;&lt;/tr&gt;
+                &lt;/tbody&gt;
+                &lt;tfoot&gt;
+                  &lt;tr&gt;
+                      &lt;td&gt;
+                  &lt;h2&gt;Formations&lt;/h2&gt;&lt;/td&gt;&lt;/tr&gt;
+                      &lt;tr&gt;&lt;td&gt;&lt;ul&gt;
+                        &lt;li&gt;Cloud Campus -- Formation D&eacute;veloppeur Full-Stack&lt;/li&gt;
+                        &lt;li&gt;Formation chez OpenClassrooms -- D&eacute;veloppeur Web Front-End Junior&lt;/li&gt;
+                      &lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;
+                  &lt;/tr&gt;
+                  &lt;td&gt;&lt;h2&gt;Exp&eacute;rience Professionnelle&lt;/h2&gt;&lt;/td&gt;
+                  &lt;tr&gt;
+                        &lt;td&gt;&lt;ul&gt;
+                          &lt;li&gt;Cr&eacute;ation de mon blog d'apprentissage du Japonais&lt;/li&gt;
+                          &lt;li&gt;Cr&eacute;ation de mon site de publication de manga&lt;/li&gt;
+                          &lt;li&gt;Cr&eacute;ation de mon site retra&ccedil;ant mon parcours en tant que d&eacute;veloppeur web&lt;/li&gt;
+                          &lt;li&gt;Cr&eacute;ation de mon portfolio&lt;/li&gt;
+                        &lt;/ul&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tfoot&gt;
+              &lt;/table&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;</code></pre>
         <iframe
           src="./exo3/index.html"
           width="98%"
@@ -67,7 +303,91 @@
         ></iframe>
         <button><a href="./exo3/index.html">Voir le site</a></button>
         <h2 id="4">Exercice 4</h2>
-        <img class="snippet" src="./website_content/exo4_snippet.png" />
+        <pre><code>&lt;!DOCTYPE html&gt;
+          &lt;html lang=&quot;en&quot;&gt;
+            &lt;head&gt;
+              &lt;meta charset=&quot;UTF-8&quot; /&gt;
+              &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+              &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+              &lt;title&gt;Formulaire&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;form&gt;
+                &lt;fieldset&gt;
+                  &lt;p&gt;
+                    &lt;label for=&quot;name&quot;&gt;Nom&lt;/label&gt;
+                    &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; /&gt;
+                  &lt;/p&gt;
+                  &lt;p&gt;
+                    &lt;label for=&quot;prenom&quot;&gt;Pr&eacute;nom&lt;/label&gt;
+                    &lt;input type=&quot;text&quot; name=&quot;prenom&quot; id=&quot;prenom&quot; /&gt;
+                  &lt;/p&gt;
+                  &lt;p&gt;
+                    &lt;label for=&quot;age&quot;&gt;&Acirc;ge&lt;/label&gt;
+                    &lt;input type=&quot;number&quot; name=&quot;age&quot; id=&quot;age&quot; /&gt;
+                  &lt;/p&gt;
+                  &lt;p&gt;
+                    &lt;label for=&quot;email&quot;&gt;Adresse email&lt;/label&gt;
+                    &lt;input type=&quot;email&quot; name=&quot;email&quot; id=&quot;email&quot; /&gt;
+                  &lt;/p&gt;
+                  &lt;p&gt;
+                    &lt;label for=&quot;cv&quot;&gt;CV&lt;/label&gt; &lt;input type=&quot;file&quot; name=&quot;cv&quot; id=&quot;cv&quot; /&gt;
+                  &lt;/p&gt;
+                  &lt;p&gt;
+                    &lt;label for=&quot;color&quot;&gt;Ta couleur pr&eacute;f&eacute;r&eacute;&lt;/label&gt;
+                    &lt;input type=&quot;color&quot; name=&quot;color&quot; id=&quot;color&quot; /&gt;
+                  &lt;/p&gt;
+                  &lt;p&gt;
+                    &lt;label for=&quot;plat&quot;&gt;Ton plat pr&eacute;f&eacute;r&eacute;&lt;/label&gt;
+                    &lt;input list=&quot;plat_list&quot; type=&quot;text&quot; id=&quot;plat&quot; name=&quot;plat&quot; /&gt;
+                    &lt;datalist id=&quot;plat_list&quot;&gt;
+                      &lt;option value=&quot;tartiflette&quot;&gt;Tartiflette&lt;/option&gt;
+                      &lt;option value=&quot;raclette&quot;&gt;Raclette&lt;/option&gt;
+                      &lt;option value=&quot;fondue&quot;&gt;Fondue&lt;/option&gt;
+                    &lt;/datalist&gt;
+                  &lt;/p&gt;
+                  &lt;fieldset&gt;
+                    &lt;p&gt;O&ugrave; habitez-vous ?&lt;/p&gt;
+                    &lt;p&gt;
+                      &lt;input type=&quot;radio&quot; id=&quot;Lyon&quot; value=&quot;Lyon&quot; /&gt;
+                      &lt;label for=&quot;Lyon&quot;&gt;Lyon&lt;/label&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                      &lt;input type=&quot;radio&quot; id=&quot;Bordeaux&quot; value=&quot;Bordeaux&quot; /&gt;
+                      &lt;label for=&quot;Bordeaux&quot;&gt;Bordeaux&lt;/label&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                      &lt;input type=&quot;radio&quot; id=&quot;Paris&quot; value=&quot;Paris&quot; /&gt;
+                      &lt;label for=&quot;Paris&quot;&gt;Paris&lt;/label&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                      &lt;input type=&quot;radio&quot; id=&quot;Toulouse&quot; value=&quot;Toulouse&quot; /&gt;
+                      &lt;label for=&quot;Toulouse&quot;&gt;Toulouse&lt;/label&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                      &lt;input type=&quot;radio&quot; id=&quot;N&icirc;mes&quot; value=&quot;N&icirc;mes&quot; /&gt;
+                      &lt;label for=&quot;N&icirc;mes&quot;&gt;N&icirc;mes&lt;/label&gt;
+                    &lt;/p&gt;
+                  &lt;/fieldset&gt;
+                  &lt;fieldset&gt;
+                    &lt;input type=&quot;checkbox&quot; id=&quot;Chien&quot; value=&quot;Chien&quot; /&gt;
+                    &lt;label for=&quot;Chien&quot;&gt;Chien&lt;/label&gt;
+                    &lt;input type=&quot;checkbox&quot; id=&quot;Chat&quot; value=&quot;Chat&quot; /&gt;
+                    &lt;label for=&quot;Chat&quot;&gt;Chat&lt;/label&gt;
+                    &lt;input type=&quot;checkbox&quot; id=&quot;Singe&quot; value=&quot;Singe&quot; /&gt;
+                    &lt;label for=&quot;Singe&quot;&gt;Singe&lt;/label&gt;
+                    &lt;input type=&quot;checkbox&quot; id=&quot;Gorille&quot; value=&quot;Gorille&quot; /&gt;
+                    &lt;label for=&quot;Gorille&quot;&gt;Gorille&lt;/label&gt;
+                    &lt;input type=&quot;checkbox&quot; id=&quot;Pangolin&quot; value=&quot;Pangolin&quot; /&gt;
+                    &lt;label for=&quot;Pangolin&quot;&gt;Pangolin&lt;/label&gt;
+                    &lt;input type=&quot;checkbox&quot; id=&quot;Requin&quot; value=&quot;Requin&quot; /&gt;
+                    &lt;label for=&quot;Requin&quot;&gt;Requin&lt;/label&gt;
+                  &lt;/fieldset&gt;
+                  &lt;button type=&quot;submit&quot;&gt;Envoyer&lt;/button&gt;
+                &lt;/fieldset&gt;
+              &lt;/form&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;</code></pre>
         <iframe
           src="./exo4/index.html"
           width="98%"
@@ -77,8 +397,98 @@
         <button><a href="./exo4/index.html">Voir le site</a></button>
         <h2 id="5">Exercice 5</h2>
         <div class="dual">
-          <img class="snippet" src="./website_content/exo5_snippet_1.png" />
-          <img class="snippet" src="./website_content/exo5_snippet_2.png" />
+          <pre><code>&lt;!DOCTYPE html&gt;
+            &lt;html lang=&quot;en&quot;&gt;
+              &lt;head&gt;
+                &lt;meta charset=&quot;UTF-8&quot; /&gt;
+                &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+                &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+                &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot; /&gt;
+                &lt;title&gt;Test CSS&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                &lt;div&gt;
+                  &lt;h2&gt;Lorep Ipsum Dolor&lt;/h2&gt;
+                  &lt;p&gt;
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+                    blanditiis recusandae magni autem doloribus atque quae soluta velit, in
+                    expedita eum corporis reprehenderit, quos minus est repellat
+                    voluptatibus nam, nisi voluptatem eveniet culpa. Velit excepturi, in
+                    ipsa necessitatibus earum repudiandae.
+                  &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                  &lt;h2&gt;Lorep Ipsum Dolor&lt;/h2&gt;
+                  &lt;p&gt;
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+                    blanditiis recusandae magni autem doloribus atque quae soluta velit, in
+                    expedita eum corporis reprehenderit, quos minus est repellat
+                    voluptatibus nam, nisi voluptatem eveniet culpa. Velit excepturi, in
+                    ipsa necessitatibus earum repudiandae.
+                  &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                  &lt;h2&gt;Lorep Ipsum Dolor&lt;/h2&gt;
+                  &lt;p&gt;
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+                    blanditiis recusandae magni autem doloribus atque quae soluta velit, in
+                    expedita eum corporis reprehenderit, quos minus est repellat
+                    voluptatibus nam, nisi voluptatem eveniet culpa. Velit excepturi, in
+                    ipsa necessitatibus earum repudiandae.
+                  &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                  &lt;h2&gt;Lorep Ipsum Dolor&lt;/h2&gt;
+                  &lt;p&gt;
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+                    blanditiis recusandae magni autem doloribus atque quae soluta velit, in
+                    expedita eum corporis reprehenderit, quos minus est repellat
+                    voluptatibus nam, nisi voluptatem eveniet culpa. Velit excepturi, in
+                    ipsa necessitatibus earum repudiandae.
+                  &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                  &lt;h2&gt;Lorep Ipsum Dolor&lt;/h2&gt;
+                  &lt;p&gt;
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+                    blanditiis recusandae magni autem doloribus atque quae soluta velit, in
+                    expedita eum corporis reprehenderit, quos minus est repellat
+                    voluptatibus nam, nisi voluptatem eveniet culpa. Velit excepturi, in
+                    ipsa necessitatibus earum repudiandae.
+                  &lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/body&gt;
+            &lt;/html&gt;</code></pre>
+          <pre><code>div:nth-child(odd) &gt; h2 {
+            color: pink;
+          }
+          
+          h2:hover + p {
+            color: orange;
+          }
+          
+          div:nth-child(1) p::first-line {
+            background-color: green;
+          }
+          
+          div:nth-child(2) {
+            border: 0.5vh solid pink;
+          }
+          
+          div:nth-child(3) p::first-letter {
+            color: red;
+            font-size: 20px;
+            float: left;
+          }
+          
+          div:nth-child(4) + div {
+            background-color: blue;
+          }
+          
+          div:nth-child(4):hover::before {
+            content: &quot;&gt;&gt;&quot;;
+            display: block;
+          }</code></pre>
         </div>
         <iframe
           src="./exo5/index.html"
@@ -89,8 +499,83 @@
         <button><a href="./exo5/index.html">Voir le site</a></button>
         <h2 id="6">Exercice 6</h2>
         <div class="dual">
-          <img class="snippet" src="./website_content/exo6_snippet_1.png" />
-          <img class="snippet" src="./website_content/exo6_snippet_2.png" />
+          <pre><code>&lt;!DOCTYPE html&gt;
+            &lt;html lang=&quot;en&quot;&gt;
+              &lt;head&gt;
+                &lt;meta charset=&quot;UTF-8&quot; /&gt;
+                &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+                &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+                &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot; /&gt;
+                &lt;title&gt;CSS 2&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                &lt;main&gt;
+                  &lt;div class=&quot;square_1&quot;&gt;1&lt;/div&gt;
+                  &lt;div class=&quot;square_2&quot;&gt;2&lt;/div&gt;
+                  &lt;div class=&quot;square_3&quot;&gt;3&lt;/div&gt;
+                  &lt;div class=&quot;square_4&quot;&gt;4&lt;/div&gt;
+                  &lt;div class=&quot;square_5&quot;&gt;5&lt;/div&gt;
+                  &lt;div class=&quot;square_6&quot;&gt;6&lt;/div&gt;
+                  &lt;div class=&quot;square_7&quot;&gt;7&lt;/div&gt;
+                  &lt;div class=&quot;square_8&quot;&gt;8&lt;/div&gt;
+                  &lt;div class=&quot;square_9&quot;&gt;9&lt;/div&gt;
+                &lt;/main&gt;
+              &lt;/body&gt;
+            &lt;/html&gt;</code></pre>
+          <pre><code>* {
+            margin: 0;
+            padding: O;
+            box-sizing: border-box;
+          }
+          main {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+          }
+          div[class^=&quot;square_&quot;] {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px;
+          }
+          
+          div:nth-child(odd) {
+            background-color: #256ab6;
+          }
+          
+          div:nth-child(even) {
+            background-color: #dd22aa;
+          }
+          
+          div:nth-child(1):hover {
+            width: 250px;
+            height: 250px;
+          }
+          
+          div:nth-child(2):hover + div:nth-child(3) {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+          }
+          
+          div:nth-child(3) {
+            background-color: red;
+          }
+          
+          div:nth-child(4) {
+            background-color: pink;
+          }
+          
+          div:nth-child(5) {
+            background-color: yellow;
+          }
+          
+          div:nth-child(8) {
+            background-color: orange;
+          }</code></pre>
         </div>
         <iframe
           src="./exo6/index.html"
@@ -101,8 +586,43 @@
         <button><a href="./exo6/index.html">Voir le site</a></button>
         <h2 id="7">Exercice 7</h2>
         <div class="dual">
-          <img class="snippet" src="./website_content/exo7_snippet_1.png" />
-          <img class="snippet" src="./website_content/exo7_snippet_2.png" />
+          <pre><code>&lt;!DOCTYPE html&gt;
+            &lt;html lang=&quot;en&quot;&gt;
+              &lt;head&gt;
+                &lt;meta charset=&quot;UTF-8&quot; /&gt;
+                &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+                &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+                &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot; /&gt;
+            
+                &lt;!-- Google Font --&gt;
+                &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot; /&gt;
+                &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin /&gt;
+                &lt;link
+                  href=&quot;https://fonts.googleapis.com/css2?family=Ms+Madi&amp;display=swap&quot;
+                  rel=&quot;stylesheet&quot;
+                /&gt;
+            
+                &lt;title&gt;Font exo&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                &lt;h1&gt;Lorem Ipsum&lt;/h1&gt;
+                &lt;p&gt;
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt dolorem
+                  modi, aut, tempore quos fugiat at inventore, corporis nisi veritatis quod
+                  ipsum repellat adipisci alias obcaecati quo explicabo saepe omnis.
+                &lt;/p&gt;
+              &lt;/body&gt;
+            &lt;/html&gt;</code></pre>
+          >
+          <pre><code>@font-face {
+            font-family: &quot;Ms Madi&quot;, &quot;cursive&quot;, sans-serif;
+            src: url(https://fonts.googleapis.com/css2?family=Ms+Madi&amp;display=swap);
+          }
+          
+          body {
+            font-family: &quot;Ms Madi&quot;, cursive;
+          }</code></pre>
+          >
         </div>
         <iframe
           src="./exo7/index.html"
@@ -113,8 +633,183 @@
         <button><a href="./exo7/index.html">Voir le site</a></button>
         <h2 id="8">Exercice 8</h2>
         <div class="dual">
-          <img class="snippet" src="./website_content/exo8_snippet_1.png" />
-          <img class="snippet" src="./website_content/exo8_snippet_2.png" />
+          <pre><code>&lt;!DOCTYPE html&gt;
+            &lt;html lang=&quot;en&quot;&gt;
+              &lt;head&gt;
+                &lt;meta charset=&quot;UTF-8&quot; /&gt;
+                &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+                &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+                &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot; /&gt;
+                &lt;title&gt;Landing Page&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                &lt;!-- Header --&gt;
+                &lt;header&gt;
+                  &lt;nav&gt;
+                    &lt;p&gt;
+                      &lt;a href=&quot;#&quot;&gt;Ab Show&lt;/a&gt;
+                      &lt;a href=&quot;#&quot;&gt;Accueil&lt;/a&gt;
+                      &lt;a href=&quot;#&quot;&gt;Nos spectacles&lt;/a&gt;
+                      &lt;a href=&quot;#&quot;&gt;&Agrave; propos de nous&lt;/a&gt;
+                      &lt;a href=&quot;#&quot;&gt;News&lt;/a&gt;
+                    &lt;/p&gt;
+                  &lt;/nav&gt;
+                  &lt;h1&gt;Bienvenue chez Ab Show&lt;/h1&gt;
+                &lt;/header&gt;
+            
+                &lt;!-- Main --&gt;
+                &lt;main&gt;
+                  &lt;h2&gt;Ici &agrave; Lamorlaye&lt;/h2&gt;
+                  &lt;div class=&quot;line&quot;&gt;&lt;/div&gt;
+                  &lt;h2&gt;Nos activit&eacute;s&lt;/h2&gt;
+                  &lt;p&gt;
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime velit
+                    quod facilis alias expedita distinctio consequatur quam recusandae
+                    eveniet, dolorum possimus, ut eum commodi provident voluptate quae.
+                    Veniam, veritatis voluptatem! Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Minus id labore similique officiis esse doloremque
+                    blanditiis a totam atque cum unde, veritatis vitae praesentium facilis
+                    accusamus. Aperiam enim mollitia dolore. Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Voluptatum mollitia accusantium
+                    blanditiis expedita recusandae tempora deserunt necessitatibus saepe
+                    modi, excepturi rem ratione, illum sunt ea asperiores nisi officiis
+                    quibusdam iste. Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Quidem rerum, dolore veniam nulla commodi incidunt corrupti
+                    impedit. Nam eaque perferendis tenetur, corrupti odio numquam error
+                    tempore corporis voluptatum vel minus. Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Voluptatem aspernatur iusto expedita!
+                    Architecto ea totam aspernatur sed labore quia iusto reprehenderit
+                    obcaecati sequi. Nesciunt, officiis. Amet beatae cum velit? Illo! Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. At consequuntur
+                    itaque quisquam eligendi natus vel voluptas, ipsa assumenda nemo culpa
+                    unde sunt minima nesciunt autem alias voluptates corporis accusamus
+                    sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime velit quod facilis alias expedita distinctio consequatur quam
+                    recusandae eveniet, dolorum possimus, ut eum commodi provident voluptate
+                    quae. Veniam, veritatis voluptatem! Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Minus id labore similique officiis esse
+                    doloremque blanditiis a totam atque cum unde, veritatis vitae
+                    praesentium facilis accusamus. Aperiam enim mollitia dolore. Lorem ipsum
+                    dolor sit amet consectetur, adipisicing elit. Voluptatum mollitia
+                    accusantium blanditiis expedita recusandae tempora deserunt
+                    necessitatibus saepe modi, excepturi rem ratione, illum sunt ea
+                    asperiores nisi officiis quibusdam iste. Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Quidem rerum, dolore veniam nulla commodi
+                    incidunt corrupti impedit. Nam eaque perferendis tenetur, corrupti odio
+                    numquam error tempore corporis voluptatum vel minus. Lorem ipsum dolor,
+                    sit amet consectetur adipisicing elit. Voluptatem aspernatur iusto
+                    expedita! Architecto ea totam aspernatur sed labore quia iusto
+                    reprehenderit obcaecati sequi. Nesciunt, officiis. Amet beatae cum
+                    velit? Illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    consequuntur itaque quisquam eligendi natus vel voluptas, ipsa assumenda
+                    nemo culpa unde sunt minima nesciunt autem alias voluptates corporis
+                    accusamus sapiente.
+                  &lt;/p&gt;
+                  &lt;p&gt;
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime velit
+                    quod facilis alias expedita distinctio consequatur quam recusandae
+                    eveniet, dolorum possimus, ut eum commodi provident voluptate quae.
+                    Veniam, veritatis voluptatem! Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Minus id labore similique officiis esse doloremque
+                    blanditiis a totam atque cum unde, veritatis vitae praesentium facilis
+                    accusamus. Aperiam enim mollitia dolore. Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Voluptatum mollitia accusantium
+                    blanditiis expedita recusandae tempora deserunt necessitatibus saepe
+                    modi, excepturi rem ratione, illum sunt ea asperiores nisi officiis
+                    quibusdam iste. Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Quidem rerum, dolore veniam nulla commodi incidunt corrupti
+                    impedit. Nam eaque perferendis tenetur, corrupti odio numquam error
+                    tempore corporis voluptatum vel minus. Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Voluptatem aspernatur iusto expedita!
+                    Architecto ea totam aspernatur sed labore quia iusto reprehenderit
+                    obcaecati sequi. Nesciunt, officiis. Amet beatae cum velit? Illo! Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. At consequuntur
+                    itaque quisquam eligendi natus vel voluptas, ipsa assumenda nemo culpa
+                    unde sunt minima nesciunt autem alias voluptates corporis accusamus
+                    sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime velit quod facilis alias expedita distinctio consequatur quam
+                    recusandae eveniet, dolorum possimus, ut eum commodi provident voluptate
+                    quae. Veniam, veritatis voluptatem! Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Minus id labore similique officiis esse
+                    doloremque blanditiis a totam atque cum unde, veritatis vitae
+                    praesentium facilis accusamus. Aperiam enim mollitia dolore. Lorem ipsum
+                    dolor sit amet consectetur, adipisicing elit. Voluptatum mollitia
+                    accusantium blanditiis expedita recusandae tempora deserunt
+                    necessitatibus saepe modi, excepturi rem ratione, illum sunt ea
+                    asperiores nisi officiis quibusdam iste. Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Quidem rerum, dolore veniam nulla commodi
+                    incidunt corrupti impedit. Nam eaque perferendis tenetur, corrupti odio
+                    numquam error tempore corporis voluptatum vel minus. Lorem ipsum dolor,
+                    sit amet consectetur adipisicing elit. Voluptatem aspernatur iusto
+                    expedita! Architecto ea totam aspernatur sed labore quia iusto
+                    reprehenderit obcaecati sequi. Nesciunt, officiis. Amet beatae cum
+                    velit? Illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    consequuntur itaque quisquam eligendi natus vel voluptas, ipsa assumenda
+                    nemo culpa unde sunt minima nesciunt autem alias voluptates corporis
+                    accusamus sapiente.
+                  &lt;/p&gt;
+                &lt;/main&gt;
+              &lt;/body&gt;
+            &lt;/html&gt;</code></pre>
+          <pre><code>* {
+            margin: 0%;
+          }
+          
+          header {
+            height: 20%;
+          }
+          
+          nav {
+            text-align: center;
+            padding: 2% 0;
+          }
+          
+          a:nth-child(1) {
+            color: black;
+          }
+          
+          a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: rgb(199, 56, 80);
+            font-weight: bold;
+          }
+          
+          h1 {
+            text-align: center;
+            margin: 2% 0;
+          }
+          
+          main {
+            height: 80%;
+            background-color: lightgrey;
+            padding: 2%;
+          }
+          
+          .line {
+            border: 1px solid grey;
+          }
+          
+          h2:nth-child(1) {
+            background-color: black;
+            color: red;
+          }
+          
+          h2:nth-child(3) {
+            background-color: rgb(199, 56, 80);
+            color: white;
+          }
+          
+          h2 {
+            text-align: center;
+            padding: 2%;
+            margin: 2% 0;
+          }
+          
+          main p {
+            text-align: justify;
+            margin-top: 2%;
+          }</code></pre>
         </div>
         <iframe
           src="./exo8/index.html"
@@ -124,6 +819,46 @@
         ></iframe>
         <button><a href="./exo8/index.html">Voir le site</a></button>
         <h2 id="9">Exercice 9</h2>
+        <pre><code>&lt;!DOCTYPE html&gt;
+          &lt;html lang=&quot;en&quot;&gt;
+            &lt;head&gt;
+              &lt;meta charset=&quot;UTF-8&quot; /&gt;
+              &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+              &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+              &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot; /&gt;
+              &lt;title&gt;Menu atypique&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;nav&gt;
+                &lt;a href=&quot;#&quot;&gt;Acceuil&lt;/a&gt;
+                &lt;a href=&quot;#&quot;&gt;Nous&lt;/a&gt;
+                &lt;a href=&quot;#&quot;&gt;R&eacute;alisations&lt;/a&gt;
+                &lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;
+              &lt;/nav&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;</code></pre>
+        <pre><code>nav {
+            text-align: center;
+            background-color: lightgrey;
+          }
+          
+          a {
+            display: inline-block;
+            width: 10em;
+            height: 10em;
+            border-radius: 50%;
+            margin: 10px;
+            background-color: red;
+            line-height: 10em;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+          }
+          
+          a:hover {
+            background-color: green;
+          }</code></pre>
         <iframe
           src="./exo9/index.html"
           width="98%"
@@ -131,9 +866,217 @@
           frameborder="0"
         ></iframe>
         <h2 id="10">Exercice 10</h2>
-        <p>Contenu de l'exercice à ajouter.</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+          &lt;html lang=&quot;en&quot;&gt;
+            &lt;head&gt;
+              &lt;meta charset=&quot;UTF-8&quot; /&gt;
+              &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+              &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+              &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot; /&gt;
+              &lt;title&gt;Flexbox&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;div class=&quot;container&quot;&gt;
+                &lt;h2&gt;OUR TEAM&lt;/h2&gt;
+                &lt;div class=&quot;cards&quot;&gt;
+                  &lt;div class=&quot;member&quot;&gt;
+                    &lt;img
+                      src=&quot;https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/13/1490989538-egg.jpg?resize=768:*&quot;
+                      alt=&quot;profile picture&quot;
+                    /&gt;
+                    &lt;h3&gt;Web Coder&lt;/h3&gt;
+                    &lt;h4&gt;Freelance&lt;/h4&gt;
+                    &lt;h4&gt;Senior&lt;/h4&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;member&quot;&gt;
+                    &lt;img
+                      src=&quot;https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/13/1490989538-egg.jpg?resize=768:*&quot;
+                      alt=&quot;profile picture&quot;
+                    /&gt;
+                    &lt;h3&gt;Web Coder&lt;/h3&gt;
+                    &lt;h4&gt;Freelance&lt;/h4&gt;
+                    &lt;h4&gt;Senior&lt;/h4&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;member&quot;&gt;
+                    &lt;img
+                      src=&quot;https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/13/1490989538-egg.jpg?resize=768:*&quot;
+                      alt=&quot;profile picture&quot;
+                    /&gt;
+                    &lt;h3&gt;Web Coder&lt;/h3&gt;
+                    &lt;h4&gt;Freelance&lt;/h4&gt;
+                    &lt;h4&gt;Senior&lt;/h4&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;member&quot;&gt;
+                    &lt;img
+                      src=&quot;https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/13/1490989538-egg.jpg?resize=768:*&quot;
+                      alt=&quot;profile picture&quot;
+                    /&gt;
+                    &lt;h3&gt;Web Coder&lt;/h3&gt;
+                    &lt;h4&gt;Freelance&lt;/h4&gt;
+                    &lt;h4&gt;Senior&lt;/h4&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;</code></pre>
+        <pre><code>* {
+            margin: 0;
+          }
+          
+          body {
+            height: 100%;
+            width: 100%;
+          }
+          
+          .container {
+            width: 100%;
+            height: 50%;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          
+          h2 {
+            color: white;
+            margin-top: 2%;
+          }
+          
+          .cards {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            margin-top: 2%;
+            margin-bottom: 5%;
+          }
+          
+          .member {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 23%;
+          }
+          
+          img {
+            width: 60%;
+            padding-top: 5%;
+          }
+          
+          h3 {
+            padding: 5%;
+          }
+          
+          h4 {
+            padding: 3%;
+          }</code></pre>
+        <iframe
+          src="./exo10/index.html"
+          width="98%"
+          height="82%"
+          frameborder="0"
+        ></iframe>
         <h2 id="11">Exercice 11</h2>
-        <p>Contenu de l'exercice à ajouter.</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+          &lt;html lang=&quot;en&quot;&gt;
+            &lt;head&gt;
+              &lt;meta charset=&quot;UTF-8&quot; /&gt;
+              &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+              &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+              &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot;&gt;
+              &lt;title&gt;Layout exemple&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;div class=&quot;container&quot;&gt;
+              &lt;h2&gt;Layout Exemple&lt;/h2&gt;
+              &lt;div class=&quot;cards&quot;&gt;
+                &lt;div class=&quot;member&quot;&gt;
+                  &lt;h3&gt;Personnage 1&lt;/h3&gt;
+                  &lt;img
+                    src=&quot;https://cdn.discordapp.com/attachments/999583085630857326/1019547939963666442/Photo_1.jpg&quot;
+                  /&gt;
+                  &lt;p&gt;
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex molestias
+                    doloribus facere enim, tenetur veniam saepe. Quam quaerat soluta,
+                    aspernatur laborum repudiandae consequuntur vitae?
+                &lt;/div&gt;
+                &lt;div class=&quot;member&quot;&gt;
+                  &lt;h3&gt;Personnage 2&lt;/h3&gt;
+                  &lt;img
+                    src=&quot;https://cdn.discordapp.com/attachments/999583085630857326/1019547940429246534/Photo_2.jpg&quot;
+                  /&gt;
+                  &lt;p&gt;
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  &lt;/p&gt;
+                &lt;/div&gt;
+                  &lt;div class=&quot;member&quot;&gt;
+                    &lt;h3&gt;Personnage 3&lt;/h3&gt;
+                    &lt;img
+                      src=&quot;https://cdn.discordapp.com/attachments/999583085630857326/1019547940760592404/Photo_3.jpg&quot;
+                    /&gt;
+                    &lt;p&gt;
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
+                      molestias doloribus facere enim, tenetur veniam saepe. 
+                    &lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;member&quot;&gt;
+                      &lt;h3&gt;Personnage 4&lt;/h3&gt;
+                      &lt;img
+                        src=&quot;https://cdn.discordapp.com/attachments/999583085630857326/1019547940991287327/Photo_4.jpg&quot;
+                      /&gt;
+                      &lt;p&gt;
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      &lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;</code></pre>
+        <pre><code>* {
+          margin: 0%;
+        }
+        
+        .container {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+        }
+        
+        h2 {
+          padding-top: 3%;
+          padding-bottom: 3%;
+        }
+        
+        .cards {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          justify-content: space-evenly;
+        }
+        
+        .member {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 15%;
+          border: solid 1px black;
+          padding: 2%;
+        }
+        
+        img {
+          width: 200px;
+          height: 230px;
+          padding-top: 8%;
+          padding-bottom: 8%;
+        }</code></pre>
+        <iframe
+          src="./exo11/index.html"
+          width="98%"
+          height="103%"
+          frameborder="0"
+        ></iframe>
         <h2 id="12">Exercice 12</h2>
         <p>Contenu de l'exercice à ajouter.</p>
         <h2 id="13">Exercice 13</h2>
@@ -151,5 +1094,10 @@
       <a href="#"><h3>Politique de confidentialité</h3></a>
       <a href="https://cloud-campus.fr/"><h3>Site de l'école</h3></a>
     </footer>
+    <!-- Code coloring scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>
