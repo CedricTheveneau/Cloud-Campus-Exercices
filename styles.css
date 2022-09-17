@@ -90,6 +90,10 @@ h2:nth-child(1) {
   align-items: flex-start;
 }
 
+pre {
+  padding-right: 2%;
+}
+
 .snippet {
   width: 49%;
   border-radius: 25px;
