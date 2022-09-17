@@ -65,14 +65,17 @@ nav a:hover {
   width: 90%;
   height: 100%;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 h2 {
   margin-top: 2%;
   margin-bottom: 2%;
+  margin-left: -10%;
   padding-top: 2%;
   border-top: 2px lightgrey solid;
   border-radius: 10%;
+  text-align: center;
 }
 
 h2:nth-child(1) {
@@ -93,7 +96,7 @@ h2:nth-child(1) {
 }
 
 .website {
-  width: 100%;
+  width: 98%;
 }
 
 button {
@@ -103,6 +106,7 @@ button {
   height: 8%;
   width: 12%;
   border-radius: 25px;
+  margin-left: 39%;
 }
 
 button a {
