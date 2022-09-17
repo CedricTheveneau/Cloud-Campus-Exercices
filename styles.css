@@ -81,8 +81,14 @@ h2:nth-child(1) {
   padding-top: none;
 }
 
+.dual {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
 .snippet {
-  width: 40%;
+  width: 49%;
   border-radius: 25px;
 }
 
