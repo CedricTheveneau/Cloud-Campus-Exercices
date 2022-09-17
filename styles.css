@@ -104,7 +104,6 @@ h2:nth-child(1) {
 
 pre {
   padding-right: 2%;
-  font-family: monospace;
   margin-bottom: 2%;
 }
 
@@ -181,4 +180,71 @@ footer a:hover {
 
 #btt a {
   width: 100%;
+}
+
+@media (max-width: 920px) {
+  main {
+    flex-direction: column;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: x-large;
+  }
+
+  nav {
+    width: 100%;
+    height: 10%;
+    flex-direction: row;
+    border: none;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+  }
+
+  nav a {
+    text-align: center;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 0%;
+    border-top: solid 2px lightgrey;
+    border-radius: 25px;
+  }
+
+  h2 {
+    margin-left: 0%;
+  }
+
+  button {
+    margin-left: 35%;
+    width: 30%;
+  }
+
+  pre {
+    padding-right: 0%;
+  }
+
+  #btt {
+    width: 8%;
+    height: 8%;
+    margin-left: 88.5vw;
+    margin-top: -22vh;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    font-size: x-small;
+  }
 }
