@@ -24,7 +24,6 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: left;
-  padding-left: 2%;
 }
 
 a:nth-child(1) {
@@ -32,7 +31,9 @@ a:nth-child(1) {
 }
 
 h1 {
+  width: 100%;
   color: white;
+  padding-left: 5%;
 }
 
 h1:hover {
@@ -91,7 +92,7 @@ h2 {
   margin-left: -10%;
   padding-top: 2%;
   border-top: 2px lightgrey solid;
-  border-radius: 10%;
+  border-radius: 15px;
   text-align: center;
 }
 
@@ -104,6 +105,11 @@ h2:nth-child(1) {
 pre {
   padding-right: 2%;
   font-family: monospace;
+  margin-bottom: 2%;
+}
+
+code {
+  border-radius: 25px;
 }
 
 button {
