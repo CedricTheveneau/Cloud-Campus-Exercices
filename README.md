@@ -6,13 +6,13 @@ HTML - CSS
 
 Worth noting:
 Responsive website
-Uses animations
+/ uses animations
 
 Composition:
-Header with integrated 'Back home' button
-Side bar nav that goes on top of the main container when using smaller devices
-Main container taking up to 90% of the width of the screen, and 100% on smaller devices
-Footer with nav links
+- Header with integrated 'Back home' button
+- Side bar nav that goes on top of the main container when using smaller devices
+- Main container taking up to 90% of the width of the screen, and 100% on smaller devices
+- Footer with nav links and a 'Back to top' button
 
 color chart:
 - lightskyblue
