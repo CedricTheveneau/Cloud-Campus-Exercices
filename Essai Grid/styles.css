@@ -3,6 +3,10 @@
   padding: 0%;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .container-grid {
   display: grid;
   grid-template-columns: 15vw 70vw 15vw;
