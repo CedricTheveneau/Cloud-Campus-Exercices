@@ -1,5 +1,6 @@
 * {
   margin: 0%;
+  font-family: "Bubblegum Sans", cursive;
 }
 
 ::-webkit-scrollbar {
@@ -15,11 +16,17 @@ header {
   width: 100%;
   height: 10%;
   background-color: lightskyblue;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   text-align: center;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+h1 {
+  color: white;
 }
 
 main {
@@ -34,7 +41,6 @@ nav {
   flex-direction: column;
   width: 10%;
   height: 100%;
-  background-color: white;
   align-items: center;
   justify-content: center;
   border-right: solid 2px lightgrey;
@@ -58,7 +64,6 @@ nav a:hover {
   padding-left: 2%;
   width: 90%;
   height: 100%;
-  background-color: white;
   overflow-y: scroll;
 }
 
@@ -78,16 +83,39 @@ h2:nth-child(1) {
 
 .snippet {
   width: 40%;
+  border-radius: 25px;
 }
 
 .website {
   width: 100%;
 }
 
+button {
+  text-decoration: none;
+  background-color: lightskyblue;
+  border: none;
+  height: 8%;
+  width: 12%;
+  border-radius: 25px;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+}
+
+button a:hover {
+  font-size: large;
+}
+
 footer {
   width: 100%;
   height: 10%;
   background-color: lightskyblue;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -95,12 +123,11 @@ footer {
 }
 
 footer a {
-  color: black;
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
 footer a:hover {
   transform: scale(1.1);
-  color: lightcyan;
 }
