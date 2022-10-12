@@ -1,0 +1,38 @@
+#contentWrapper {
+  background-color: lightgreen;
+  margin: 12rem auto;
+  width: 700px;
+  padding: 30px 0;
+  position: relative;
+}
+
+#container {
+  display: inline-flex;
+  padding: 30px;
+  gap: 20px;
+  background-color: lightgray;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  box-sizing: border-box;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  background-color: lightcoral;
+}
+
+#myEl {
+  position: absolute;
+  bottom: -150px;
+  right: -150px;
+  background-color: crimson;
+}
+
+#absoluteEl {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  background-color: lightblue;
+}

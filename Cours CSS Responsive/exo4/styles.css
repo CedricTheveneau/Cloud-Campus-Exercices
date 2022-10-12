@@ -1,0 +1,25 @@
+/* Le em est une unité fixe, qui sera toujours égale à 16px */
+
+#square {
+  width: 200px;
+  height: 200px;
+  background-color: lightcoral;
+}
+
+@media screen and (max-width: 800px) {
+  #square {
+    background-color: lightcyan;
+  }
+}
+
+@media screen and (min-height: 400px) {
+  #square {
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  #square {
+    border: 2px solid black;
+  }
+}

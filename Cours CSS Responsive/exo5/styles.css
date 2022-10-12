@@ -1,0 +1,69 @@
+/*body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#square {
+  width: 150px;
+  height: 150px;
+  background-color: lightcoral;
+}
+
+@media screen and (max-height: 200px) {
+  body {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-height: 550px) {
+  body {
+    justify-content: flex-start;
+  }
+}*/
+
+/* Correction */
+
+body {
+  margin: 0;
+}
+
+main {
+  height: 100vh;
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#square {
+  width: 150px;
+  height: 150px;
+  background-color: lightcoral;
+}
+
+@media (max-height: 200px) {
+  main {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-height: 550px) {
+  main {
+    justify-content: flex-start;
+  }
+}
+
+@media print {
+  /* Il existe plein de paramètres pour @media */
+  main {
+    background-color: red;
+  }
+
+  #square {
+    width: 50px;
+    height: 50px;
+  }
+}

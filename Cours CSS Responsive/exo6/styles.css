@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#square {
+  width: 150px;
+  height: 150px;
+  background-color: lightcoral;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  #square {
+    background-color: yellowgreen;
+  }
+}

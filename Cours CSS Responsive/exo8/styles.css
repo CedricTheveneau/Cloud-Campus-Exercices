@@ -1,0 +1,173 @@
+/** ::before ::after {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main {
+  padding: 20px 0px;
+  margin: 20px 0;
+  background-color: lightcoral;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+main .card {
+  width: 90%;
+  height: 80px;
+  background-color: lightsalmon;
+}
+
+main .card:nth-child(odd) {
+  background-color: lightpink;
+}
+
+aside {
+  padding: 20px 0;
+  margin: 20px 0;
+  background-color: lightblue;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+aside .card {
+  width: 90%;
+  height: 100px;
+  background-color: lightcyan;
+}
+
+aside .card:nth-child(odd) {
+  background-color: lightskyblue;
+}
+
+@media screen and (min-width: 992px) {
+  #container {
+    height: 90vh;
+    width: 80%;
+    flex-direction: row;
+  }
+
+  main {
+    margin: 0%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 100%;
+  }
+
+  main .card {
+    width: 20%;
+    height: 45%;
+  }
+
+  aside {
+    margin: 0%;
+    margin-left: 2%;
+    width: 30%;
+    height: 100%;
+    margin-top: 0%;
+  }
+
+  aside .card {
+    height: 30%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #container {
+    width: 1100px;
+  }
+}*/
+
+/* Correction */
+body {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  width: 94%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#content {
+  padding: 20px;
+  background-color: palegoldenrod;
+}
+
+.cardBlue {
+  width: 150px;
+  height: 180px;
+  background-color: lightblue;
+}
+
+#sidebar {
+  align-items: center;
+  width: 240px;
+  padding: 30px 0;
+  background-color: palevioletred;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cardGreen {
+  width: 180px;
+  height: 160px;
+  background-color: lightgreen;
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+  }
+
+  #content {
+    /* Flex permet de répartir le contenu, par exemple si on donne flex: n à 2 éléments, ils vont se partager le total en fonction de n */
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    width: 1100px;
+  }
+}

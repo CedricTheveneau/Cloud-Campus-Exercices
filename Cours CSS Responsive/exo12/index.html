@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Formats d'images</title>
+  </head>
+  <body>
+    <!-- JPEG exclusivement pour les photos:
+         car il les compresse et réduit leur poids;
+         toujours garder un peu de marge sur la résolution;
+         garder l'image originale et ne pas recompresser une image déjà compressée;
+         jamais compresser à moins de 40 en qualité.
+         GetPaint.net
+    -->
+    <!-- PNG pas pour les photos:
+         car il ne compresse jamais les images;
+         idéal pour les dessins/graphic elements
+         plus lourd que le JPEG mais meilleure qualité
+         TinyPng/ILoveImg pour les réduire (pas réduire JPEG et WebP)
+         Gère la transparence et les fonds transparents
+    -->
+    <!-- WebP(icture)/WebM(edia) gère les photos, dessins, gère transparence
+         compresse mieux que le JPEG, plus petit que le Png
+         Faire une paire avec JPEG au cas où il n'est pas supporté via balise <picture>
+    -->
+    <!-- SVG poids minime car fait d'équations mathématiques
+         Zoom infini
+         Aucune perte de qualité
+         Idéal pour dessins et icones
+         Gère la transparence
+         Peut être animé, ajouter de l'intéraction via le code source
+         SVGOMG pour l'opti
+    -->
+
+    <!-- Exemple -->
+    <!--
+    <img 
+        id="jpg"
+        srcset="img/space300.jpg 300w,
+        img/space800.jpg 800w"
+        sizes="(max-width:800px) 300px, 800px"
+        src="img/space800.jpg" alt=""
+    />
+
+
+    <picture>
+        <source type="image/webp" srcset="pyramid.webp">
+        <img src="pyramid.jpg" alt="Pyramide régulière constituée de quatre triangles équilatéraux">
+    </picture>-->
+  </body>
+</html>
