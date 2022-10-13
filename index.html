@@ -43,6 +43,9 @@
         <a href="#13">Exercice 13</a>
         <a href="#14">Exercice 14</a>
         <a href="#15">Exercice 15</a>
+        <a href="#16">Exercice 16</a>
+        <a href="#17">Exercice 17</a>
+        <a href="#18">Exercice 18</a>
         <a href="#eg">Essai Grid</a>
       </nav>
       <div class="container">
@@ -2652,6 +2655,231 @@
         ></iframe>
         <button>
           <a href="./exo15/index.html" target="_blank">Voir le site</a>
+        </button>
+        <h2 id="16">Exercice 16</h2>
+        <pre><code>
+          &lt;!-- Correction --&gt;
+          &lt;!DOCTYPE html&gt;
+          &lt;html lang=&quot;en&quot;&gt;
+          &lt;head&gt;
+          &lt;meta charset=&quot;UTF-8&quot;/&gt;
+          &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+          &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+          &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot; /&gt;
+          &lt;title&gt;Correction&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+          &lt;header id=&quot;navbar&quot;&gt;
+          &lt;img src=&quot;https://assets.stickpng.com/images/580b57fcd9996e24bc43c516.png&quot; alt=&quot;Logo de l'entreprise&quot; /&gt;
+          &lt;nav&gt;
+          &lt;a href=&quot;#&quot;&gt;Accueil&lt;/a&gt;
+          &lt;a href=&quot;#&quot;&gt;Produits&lt;/a&gt;
+          &lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;
+          &lt;/nav&gt;
+          &lt;/header&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+        </code></pre>
+        <pre><code>
+          /* Correction */
+
+body {
+  margin: unset;
+}
+
+#navbar {
+  height: 80px;
+  background-color: lightgreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#navbar img {
+  height: 50px;
+}
+        </code></pre>
+        <iframe
+          src="./Cours CSS Responsive/exo1/index.html"
+          width="98%"
+          height="80px"
+          frameborder="0"
+        ></iframe>
+        <button>
+          <a href="./Cours CSS Responsive/exo1/index.html" target="_blank"
+            >Voir le site</a
+          >
+        </button>
+        <h2 id="17">Exercice 17</h2>
+        <pre><code>
+          &lt;!-- Correction --&gt;
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot; /&gt;
+    &lt;title&gt;Correction&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header id=&quot;navbar&quot;&gt;
+      &lt;img
+        id=&quot;logo&quot;
+        src=&quot;https://assets.stickpng.com/images/580b57fcd9996e24bc43c516.png&quot;
+        alt=&quot;Logo de l&#39;entreprise&quot;
+      /&gt;
+      &lt;img
+        id=&quot;menuMobile&quot;
+        src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png&quot;
+        alt=&quot;Hamburger menu icon&quot;
+      /&gt;
+      &lt;nav id=&quot;menuDesktop&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;Accueil&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;Produits&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+        <pre><code>
+          /* Correction */
+
+body {
+  margin: unset;
+}
+
+#navbar {
+  height: 80px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#logo {
+  height: 40px;
+}
+
+#menuMobile {
+  height: 50px;
+}
+
+#menuDesktop {
+  display: none;
+}
+
+#menuDesktop a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  #menuMobile {
+    display: none;
+  }
+
+  #menuDesktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #navbar {
+    background-color: lightseagreen;
+    height: 60px;
+  }
+
+  #logo {
+    height: 40px;
+  }
+}
+        </code></pre>
+        <iframe
+          src="./Cours CSS Responsive/exo2/index.html"
+          width="98%"
+          height="80px"
+          frameborder="0"
+        ></iframe>
+        <button>
+          <a href="./Cours CSS Responsive/exo2/index.html" target="_blank"
+            >Voir le site</a
+          >
+        </button>
+        <h2 id="18">Exercice 18</h2>
+        <pre><code>
+          &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot; /&gt;
+    &lt;title&gt;Correction&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;section id=&quot;content&quot;&gt;
+      &lt;article class=&quot;card&quot;&gt;&lt;/article&gt;
+      &lt;article class=&quot;card&quot;&gt;&lt;/article&gt;
+      &lt;article class=&quot;card&quot;&gt;&lt;/article&gt;
+      &lt;article class=&quot;card&quot;&gt;&lt;/article&gt;
+      &lt;article class=&quot;card&quot;&gt;&lt;/article&gt;
+      &lt;article class=&quot;card&quot;&gt;&lt;/article&gt;
+      &lt;article class=&quot;card&quot;&gt;&lt;/article&gt;
+      &lt;article class=&quot;card&quot;&gt;&lt;/article&gt;
+      &lt;article class=&quot;card&quot;&gt;&lt;/article&gt;
+    &lt;/section&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+        <pre><code>
+          /* Correction */
+
+#content {
+  width: 80%;
+  max-width: 640px;
+  background-color: lightgreen;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  width: 200px;
+  height: 280px;
+  background-color: lightskyblue;
+}
+
+.card:nth-child(even) {
+  background-color: lightsalmon;
+}
+
+@media screen and (min-width: 576px) {
+  #content {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+        </code></pre>
+        <iframe
+          src="./Cours CSS Responsive/exo3/index.html"
+          width="98%"
+          height="158%"
+          frameborder="0"
+        ></iframe>
+        <button>
+          <a href="./Cours CSS Responsive/exo3/index.html" target="_blank"
+            >Voir le site</a
+          >
         </button>
         <h2 id="eg">Essai Grid</h2>
         <pre><code>&lt;!DOCTYPE html&gt;
