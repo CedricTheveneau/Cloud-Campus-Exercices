@@ -46,6 +46,18 @@
         <a href="#16">Exercice 16</a>
         <a href="#17">Exercice 17</a>
         <a href="#18">Exercice 18</a>
+        <a href="#19">Exercice 19</a>
+        <a href="#20">Exercice 20</a>
+        <a href="#21">Exercice 21</a>
+        <a href="#22">Exercice 22</a>
+        <a href="#23">Exercice 23</a>
+        <a href="#24">Exercice 24</a>
+        <a href="#25">Exercice 25</a>
+        <a href="#26">Exercice 26</a>
+        <a href="#27">Exercice 27</a>
+        <a href="#28">Exercice 28</a>
+        <a href="#29">Exercice 29</a>
+        <a href="#30">Exercice 30</a>
         <a href="#eg">Essai Grid</a>
       </nav>
       <div class="container">
@@ -2878,6 +2890,1309 @@ body {
         ></iframe>
         <button>
           <a href="./Cours CSS Responsive/exo3/index.html" target="_blank"
+            >Voir le site</a
+          >
+        </button>
+        <h2 id="19">Exercice 19</h2>
+        <pre><code>
+          &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot; /&gt;
+    &lt;title&gt;Max-Width&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;square&quot;&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+        </code></pre>
+        <pre><code>
+          /* Le em est une unité fixe, qui sera toujours égale à 16px */
+
+#square {
+  width: 200px;
+  height: 200px;
+  background-color: lightcoral;
+}
+
+@media screen and (max-width: 800px) {
+  #square {
+    background-color: lightcyan;
+  }
+}
+
+@media screen and (min-height: 400px) {
+  #square {
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  #square {
+    border: 2px solid black;
+  }
+}
+        </code></pre>
+        <iframe
+          src="./Cours CSS Responsive/exo4/index.html"
+          width="98%"
+          height="220px"
+          frameborder="0"
+        ></iframe>
+        <button>
+          <a href="./Cours CSS Responsive/exo4/index.html" target="_blank"
+            >Voir le site</a
+          >
+        </button>
+        <h2 id="20">Exercice 20</h2>
+        <pre><code>
+          &lt;!-- Correction --&gt;
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot; /&gt;
+    &lt;title&gt;Square Flexbox&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;main&gt;
+      &lt;div id=&quot;square&quot;&gt;&lt;/div&gt;
+    &lt;/main&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+        <pre><code>
+          /* Correction */
+
+body {
+  margin: 0;
+}
+
+main {
+  height: 100vh;
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#square {
+  width: 150px;
+  height: 150px;
+  background-color: lightcoral;
+}
+
+@media (max-height: 200px) {
+  main {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-height: 550px) {
+  main {
+    justify-content: flex-start;
+  }
+}
+
+@media print {
+  /* Il existe plein de paramètres pour @media */
+  main {
+    background-color: red;
+  }
+
+  #square {
+    width: 50px;
+    height: 50px;
+  }
+}
+        </code></pre>
+        <iframe
+          src="./Cours CSS Responsive/exo5/index.html"
+          width="98%"
+          height="100%"
+          frameborder="0"
+        ></iframe>
+        <button>
+          <a href="./Cours CSS Responsive/exo5/index.html" target="_blank"
+            >Voir le site</a
+          >
+        </button>
+        <h2 id="21">Exercice 21</h2>
+        <pre><code>
+          &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot; /&gt;
+    &lt;title&gt;Square Complex Media&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;square&quot;&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+        <pre><code>
+          body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          
+          #square {
+            width: 150px;
+            height: 150px;
+            background-color: lightcoral;
+          }
+          
+          @media screen and (min-width: 375px) and (max-width: 768px) {
+            #square {
+              background-color: yellowgreen;
+            }
+          }
+        </code></pre>
+        <iframe
+          src="./Cours CSS Responsive/exo6/index.html"
+          width="98%"
+          height="100%"
+          frameborder="0"
+        ></iframe>
+        <button>
+          <a href="./Cours CSS Responsive/exo6/index.html" target="_blank"
+            >Voir le site</a
+          >
+        </button>
+        <h2 id="22">Exercice 22</h2>
+        <pre><code>
+          &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot; /&gt;
+    &lt;title&gt;Alternative Media Queries&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;square&quot;&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+        </code></pre>
+        <pre><code>
+          body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          
+          #square {
+            width: 150px;
+            height: 150px;
+            background-color: lightcoral;
+          }
+          
+          @media (orientation: landscape) {
+            #square {
+              background-color: limegreen;
+              border-radius: 50%;
+            }
+          }
+          
+          @media (orientation: portrait) {
+            #square {
+              background-color: crimson;
+              border-radius: 10%;
+            }
+          }
+          
+        </code></pre>
+        <iframe
+          src="./Cours CSS Responsive/exo7/index.html"
+          width="98%"
+          height="100%"
+          frameborder="0"
+        ></iframe>
+        <button>
+          <a href="./Cours CSS Responsive/exo7/index.html" target="_blank"
+            >Voir le site</a
+          >
+        </button>
+        <h2 id="23">Exercice 23</h2>
+        <pre><code>
+          &lt;!-- Correction --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot; /&gt;
+    &lt;title&gt;Flexbox text&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;main&gt;
+      &lt;div id=&quot;content&quot; class=&quot;subContainer&quot;&gt;
+        &lt;div class=&quot;cardBlue&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;cardBlue&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;cardBlue&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;cardBlue&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;cardBlue&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;cardBlue&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;cardBlue&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;cardBlue&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;sidebar&quot; class=&quot;subContainer&quot;&gt;
+        &lt;div class=&quot;cardGreen&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;cardGreen&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;cardGreen&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/main&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+        <pre><code>
+          /* Correction */
+body {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  width: 94%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#content {
+  padding: 20px;
+  background-color: palegoldenrod;
+}
+
+.cardBlue {
+  width: 150px;
+  height: 180px;
+  background-color: lightblue;
+}
+
+#sidebar {
+  align-items: center;
+  width: 240px;
+  padding: 30px 0;
+  background-color: palevioletred;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cardGreen {
+  width: 180px;
+  height: 160px;
+  background-color: lightgreen;
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+  }
+
+  #content {
+    /* Flex permet de répartir le contenu, par exemple si on donne flex: n à 2 éléments, ils vont se partager le total en fonction de n */
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    width: 1100px;
+  }
+}
+        </code></pre>
+        <iframe
+          src="./Cours CSS Responsive/exo8/index.html"
+          width="98%"
+          height="100%"
+          frameborder="0"
+        ></iframe>
+        <button>
+          <a href="./Cours CSS Responsive/exo8/index.html" target="_blank"
+            >Voir le site</a
+          >
+        </button>
+        <h2 id="24">Exercice 24</h2>
+        <pre><code>
+          &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot; /&gt;
+    &lt;title&gt;Position Absolute/Relative&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;contentWrapper&quot;&gt;
+      &lt;div id=&quot;container&quot;&gt;
+        &lt;div class=&quot;square&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;square&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;square&quot; id=&quot;myEl&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;absoluteEl&quot;&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+        <pre><code>
+          #contentWrapper {
+            background-color: lightgreen;
+            margin: 12rem auto;
+            width: 700px;
+            padding: 30px 0;
+            position: relative;
+          }
+          
+          #container {
+            display: inline-flex;
+            padding: 30px;
+            gap: 20px;
+            background-color: lightgray;
+            margin-left: auto;
+            margin-right: auto;
+            width: 600px;
+            box-sizing: border-box;
+          }
+          
+          .square {
+            width: 150px;
+            height: 150px;
+            background-color: lightcoral;
+          }
+          
+          #myEl {
+            position: absolute;
+            bottom: -150px;
+            right: -150px;
+            background-color: crimson;
+          }
+          
+          #absoluteEl {
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            background-color: lightblue;
+          }
+          
+        </code></pre>
+        <iframe
+          src="./Cours CSS Responsive/exo9/index.html"
+          width="98%"
+          height="100%"
+          frameborder="0"
+        ></iframe>
+        <button>
+          <a href="./Cours CSS Responsive/exo9/index.html" target="_blank"
+            >Voir le site</a
+          >
+        </button>
+        <h2 id="25">Exercice 25</h2>
+        <pre><code>
+          &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot; /&gt;
+    &lt;title&gt;Position Absolute/Relative&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;contentWrapper&quot;&gt;
+      &lt;div id=&quot;container&quot;&gt;
+        &lt;div class=&quot;square&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;square&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;square&quot; id=&quot;myEl&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;absoluteEl&quot;&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+        <pre><code>
+          /* Correction */
+
+#root {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  width: 600px;
+  height: 200px;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: lightcoral;
+  position: absolute;
+}
+
+#circle2 {
+  background-color: lightblue;
+  left: 75px;
+}
+
+#circle3 {
+  background-color: lightgreen;
+  left: 150px;
+}
+        </code></pre>
+        <iframe
+          src="./Cours CSS Responsive/exo10/index.html"
+          width="98%"
+          height="100%"
+          frameborder="0"
+        ></iframe>
+        <button>
+          <a href="./Cours CSS Responsive/exo10/index.html" target="_blank"
+            >Voir le site</a
+          >
+        </button>
+        <h2 id="26">Exercice 26</h2>
+        <pre><code>
+          &lt;!-- Correction --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot; /&gt;
+    &lt;title&gt;Position Absolute_2&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;root&quot;&gt;
+      &lt;div id=&quot;container&quot;&gt;
+        &lt;div class=&quot;square&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;square&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;square&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+        <pre><code>
+          /* Correction */
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#container {
+  background-color: purple;
+  min-width: 600px;
+  width: 60px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.square {
+  background-color: lightcoral;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+
+.square:nth-child(1) {
+  bottom: -150px;
+  left: -150px;
+}
+
+.square:nth-child(2) {
+  background-color: lightgreen;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.square:nth-child(3) {
+  background-color: lightblue;
+  top: -150px;
+  right: -150px;
+}
+        </code></pre>
+        <iframe
+          src="./Cours CSS Responsive/exo11/index.html"
+          width="98%"
+          height="100%"
+          frameborder="0"
+        ></iframe>
+        <button>
+          <a href="./Cours CSS Responsive/exo11/index.html" target="_blank"
+            >Voir le site</a
+          >
+        </button>
+        <h2 id="27">Exercice 27</h2>
+        <pre><code>
+          &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot; /&gt;
+    &lt;title&gt;Formats d&#39;images&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- JPEG exclusivement pour les photos:
+         car il les compresse et r&#233;duit leur poids;
+         toujours garder un peu de marge sur la r&#233;solution;
+         garder l&#39;image originale et ne pas recompresser une image d&#233;j&#224; compress&#233;e;
+         jamais compresser &#224; moins de 40 en qualit&#233;.
+         GetPaint.net
+    --&gt;
+    &lt;!-- PNG pas pour les photos:
+         car il ne compresse jamais les images;
+         id&#233;al pour les dessins/graphic elements
+         plus lourd que le JPEG mais meilleure qualit&#233;
+         TinyPng/ILoveImg pour les r&#233;duire (pas r&#233;duire JPEG et WebP)
+         G&#232;re la transparence et les fonds transparents
+    --&gt;
+    &lt;!-- WebP(icture)/WebM(edia) g&#232;re les photos, dessins, g&#232;re transparence
+         compresse mieux que le JPEG, plus petit que le Png
+         Faire une paire avec JPEG au cas o&#249; il n&#39;est pas support&#233; via balise &lt;picture&gt;
+    --&gt;
+    &lt;!-- SVG poids minime car fait d&#39;&#233;quations math&#233;matiques
+         Zoom infini
+         Aucune perte de qualit&#233;
+         Id&#233;al pour dessins et icones
+         G&#232;re la transparence
+         Peut &#234;tre anim&#233;, ajouter de l&#39;int&#233;raction via le code source
+         SVGOMG pour l&#39;opti
+    --&gt;
+
+    &lt;!-- Exemple --&gt;
+    &lt;!--
+    &lt;img 
+        id=&quot;jpg&quot;
+        srcset=&quot;img/space300.jpg 300w,
+        img/space800.jpg 800w&quot;
+        sizes=&quot;(max-width:800px) 300px, 800px&quot;
+        src=&quot;img/space800.jpg&quot; alt=&quot;&quot;
+    /&gt;
+
+
+    &lt;picture&gt;
+        &lt;source type=&quot;image/webp&quot; srcset=&quot;pyramid.webp&quot;&gt;
+        &lt;img src=&quot;pyramid.jpg&quot; alt=&quot;Pyramide r&#233;guli&#232;re constitu&#233;e de quatre triangles &#233;quilat&#233;raux&quot;&gt;
+    &lt;/picture&gt;--&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+        </code></pre>
+        <button>
+          <a href="./Cours CSS Responsive/exo12/index.html" target="_blank"
+            >Voir le site</a
+          >
+        </button>
+        <h2 id="28">Exercice 28</h2>
+        <pre><code>
+          &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot; /&gt;
+    &lt;link
+      href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;
+      rel=&quot;stylesheet&quot;
+      integrity=&quot;sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi&quot;
+      crossorigin=&quot;anonymous&quot;
+    /&gt;
+    &lt;title&gt;Bootstrap5&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class=&quot;container-fluid&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-3&quot;&gt;&amp;nbsp;&lt;/div&gt;
+        &lt;div class=&quot;col-3&quot;&gt;&amp;nbsp;&lt;/div&gt;
+        &lt;div class=&quot;col-3&quot;&gt;&amp;nbsp;&lt;/div&gt;
+        &lt;div class=&quot;col-3&quot;&gt;&amp;nbsp;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script
+      src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;
+      integrity=&quot;sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3&quot;
+      crossorigin=&quot;anonymous&quot;
+    &gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+        </code></pre>
+        <pre><code>
+          .container-fluid {
+            background-color: lightcoral;
+            height: 100vh;
+            width: 100vw;
+          }
+          
+          .row {
+            height: 50vh;
+          }
+          
+          .col-3 {
+            background-color: lightcyan;
+          }
+          
+          .col-3:nth-child(odd) {
+            background-color: lightgoldenrodyellow;
+          }
+        </code></pre>
+        <iframe
+          src="./Cours CSS Responsive/exo13/index.html"
+          width="98%"
+          height="100%"
+          frameborder="0"
+        ></iframe>
+        <button>
+          <a href="./Cours CSS Responsive/exo13/index.html" target="_blank"
+            >Voir le site</a
+          >
+        </button>
+        <h2 id="29">Exercice 29</h2>
+        <pre><code>&lt;!-- Aller sur le site de Magic CSS pour download la librairie
+          ouvrir le fichier zip et copier le contenu
+          l&#39;ajouter &#224; la root du projet
+          balise link avec href de la root jusqu&#39;&#224; magic.css
+     --&gt;
+     &lt;!DOCTYPE html&gt;
+     &lt;html lang=&quot;en&quot;&gt;
+       &lt;head&gt;
+         &lt;meta charset=&quot;UTF-8&quot; /&gt;
+         &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+         &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+         &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot; /&gt;
+         &lt;!-- Magic CSS --&gt;
+         &lt;link rel=&quot;stylesheet&quot; href=&quot;./magic-master/dist/magic.css&quot; /&gt;
+         &lt;title&gt;Libraries CSS&lt;/title&gt;
+       &lt;/head&gt;
+       &lt;body&gt;
+         &lt;div class=&quot;container&quot;&gt;
+           &lt;div class=&quot;circle boingInUp magictime&quot;&gt;Hover me !&lt;/div&gt;
+           &lt;div class=&quot;circle boingOutDown magictime&quot;&gt;&amp;nbsp;&lt;/div&gt;
+           &lt;div class=&quot;circle boingInUp magictime&quot;&gt;Hover me !&lt;/div&gt;
+         &lt;/div&gt;
+       &lt;/body&gt;
+     &lt;/html&gt;
+     </code></pre>
+        <pre><code>
+          body {
+            height: 100vh;
+            background-color: lightcoral;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          
+          .container {
+            height: 50vh;
+            width: 70vw;
+            background-color: darkgray;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+          }
+          
+          .circle {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: lightgreen;
+          }
+          
+          .circle:nth-child(odd) {
+            transition: ease-in-out 1s;
+            background-color: lightblue;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+          }
+          
+          .circle:nth-child(odd):hover {
+            transition: ease-in-out 1s;
+            background-color: lightseagreen;
+            border-radius: 10%;
+            color: black;
+            box-shadow: lightskyblue 20px 20px;
+          }
+          
+          .magictime {
+            -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+          }
+          
+        </code></pre>
+        <iframe
+          src="./Cours CSS Responsive/exo14/index.html"
+          width="98%"
+          height="100%"
+          frameborder="0"
+        ></iframe>
+        <button>
+          <a href="./Cours CSS Responsive/exo14/index.html" target="_blank"
+            >Voir le site</a
+          >
+        </button>
+        <h2 id="30">Exercice 30</h2>
+        <pre><code>
+          &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;./fontawesome-free-6.0.0-beta3-web/css/all.css&quot;&gt;
+    &lt;title&gt;Site E-Commerce de v&#234;tements&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;nav&gt;
+        &lt;div id=&quot;logo&quot;&gt;
+          &lt;i class=&quot;fa-solid fa-crown&quot;&gt;&lt;/i&gt;
+          &lt;p&gt;Queen of Mean&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;menusandwich&quot;&gt;
+            &lt;div id=&quot;upperlayer&quot;&gt;&amp;nbsp;&lt;/div&gt;
+            &lt;div id=&quot;middlelayer&quot;&gt;&amp;nbsp;&lt;/div&gt;
+            &lt;div id=&quot;lowerlayer&quot;&gt;&amp;nbsp;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;ul&gt;
+          &lt;!-- Position absolute mx-50% tout le temps --&gt;
+          &lt;li&gt;&lt;a href=&quot;#homme&quot;&gt;Hommes&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#femme&quot;&gt;Femmes&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#enfant&quot;&gt;Enfants&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#promo&quot;&gt;Promos&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div id=&quot;navIcons&quot;&gt;
+          &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa-regular fa-user&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+          &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa-regular fa-heart&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+          &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa-regular fa-shopping-basket&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;div class=&quot;section&quot;&gt;
+            &lt;div class=&quot;title&quot;&gt;
+                &lt;p id=&quot;homme&quot;&gt;Hommes&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;div class=&quot;cardLots&quot;&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;section&quot;&gt;
+            &lt;div class=&quot;title&quot;&gt;
+                &lt;p id=&quot;femme&quot;&gt;Femmes&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;div class=&quot;cardLots&quot;&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;section&quot;&gt;
+            &lt;div class=&quot;title&quot;&gt;
+                &lt;p id=&quot;enfant&quot;&gt;Enfants&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;div class=&quot;cardLots&quot;&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;section&quot;&gt;
+            &lt;div class=&quot;title&quot;&gt;
+                &lt;p id=&quot;promo&quot;&gt;Promos&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;div class=&quot;cardLots&quot;&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;img&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;div class=&quot;cardText&quot;&gt;
+                        &lt;p&gt;Product Name&lt;/p&gt;
+                        &lt;p&gt;100% Polyesth&#232;re&lt;/p&gt;
+                        &lt;p&gt;99€&lt;sup&gt;99&lt;/sup&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/img&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/main&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+        </code></pre>
+        <pre><code>
+          body {
+            margin: 0%;
+            box-sizing: border-box;
+          }
+          
+          header {
+            background-color: #f8f8f8;
+            display: flex;
+            align-items: center;
+            height: 70px;
+          }
+          
+          nav {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 2%;
+            padding-right: 2%;
+            position: relative;
+          }
+          
+          #logo {
+            height: 70px;
+            display: flex;
+            align-items: center;
+          }
+          
+          #logo i {
+            margin-bottom: -8px;
+          }
+          
+          i {
+            width: 24px;
+            height: 24px;
+          }
+          
+          #menusandwich {
+            display: flex;
+            flex-direction: column;
+            height: 50px;
+            width: 50px;
+            justify-content: space-around;
+            padding-top: 10px;
+          }
+          
+          #upperlayer {
+            transition: 0.5s ease-in-out;
+            background-color: black;
+            height: 5px;
+            width: 100%;
+            border-radius: 8px;
+          }
+          
+          #middlelayer {
+            transition: 1s ease-in-out;
+            background-color: black;
+            height: 5px;
+            width: 100%;
+            border-radius: 8px;
+          }
+          
+          #lowerlayer {
+            transition: 0.5s ease-in-out;
+            background-color: black;
+            height: 5px;
+            width: 100%;
+            border-radius: 8px;
+          }
+          
+          #menusandwich:hover #middlelayer {
+            transition: 0.3s ease-in-out;
+            opacity: 0;
+          }
+          
+          #menusandwich:hover #upperlayer {
+            transition: 0.5s ease-in-out;
+            transform: rotate(45deg) translateY(24px);
+          }
+          
+          #menusandwich:hover #lowerlayer {
+            transition: 0.5s ease-in-out;
+            transform: rotate(-45deg) translateY(-24px);
+          }
+          
+          ul {
+            display: none;
+          }
+          
+          ul li {
+            padding-left: 2%;
+            padding-right: 2%;
+          }
+          
+          a {
+            text-decoration: none;
+            color: black;
+          }
+          
+          #navIcons {
+            display: none;
+          }
+          
+          #navIcons a {
+            padding-left: 5%;
+            padding-right: 5%;
+          }
+          
+          .cardLots {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          
+          .section .title {
+            width: 400px;
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 2%;
+            position: relative;
+          }
+          
+          .title::after {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: black;
+            position: absolute;
+            top: 70px;
+            padding-left: 2%;
+          }
+          
+          .title p {
+            margin: 0%;
+            padding-top: 50px;
+            padding-bottom: 20px;
+          }
+          
+          .card {
+            width: 400px;
+            height: 600px;
+          }
+          
+          .cardText {
+            padding: 0% 1%;
+          }
+          
+          .cardText p:nth-child(3) {
+            font-weight: bold;
+          }
+          
+          .img {
+            background-color: lightgray;
+            width: 400px;
+            height: 450px;
+          }
+          
+          @media screen and (min-width: 768px) {
+            #menusandwich {
+              display: none;
+            }
+            ul {
+              position: absolute;
+              margin: 0%;
+              padding: 0%;
+              height: 70px;
+              left: 50%;
+              transform: translateX(-50%);
+              list-style-type: none;
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+            }
+          
+            ul a {
+              scroll-behavior: smooth;
+              position: relative;
+              transition: 0.5s ease-in-out;
+            }
+          
+            ul a:hover {
+              transition: 0.5s ease-in-out;
+              color: darkgray;
+            }
+          
+            ul a:hover::after {
+              content: "";
+              display: block;
+              width: 100%;
+              height: 2px;
+              background-color: black;
+              position: absolute;
+              top: 20px;
+              padding-left: 2%;
+            }
+          
+            #navIcons {
+              display: flex;
+              align-items: center;
+            }
+          
+            #navIcons a {
+              padding-left: 5%;
+              padding-right: 5%;
+            }
+            .cardLots {
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: space-around;
+            }
+          }
+          
+        </code></pre>
+        <iframe
+          src="./Cours CSS Responsive/exo15/index.html"
+          width="98%"
+          height="100%"
+          frameborder="0"
+        ></iframe>
+        <button>
+          <a href="./Cours CSS Responsive/exo15/index.html" target="_blank"
             >Voir le site</a
           >
         </button>

@@ -54,7 +54,7 @@ nav {
   width: 10%;
   height: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   border-right: solid 2px lightgrey;
   border-radius: 10%;
   overflow-y: scroll;
