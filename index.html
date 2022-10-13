@@ -58,7 +58,8 @@
         <a href="#28">Exercice 28</a>
         <a href="#29">Exercice 29</a>
         <a href="#30">Exercice 30</a>
-        <a href="#eg">Essai Grid</a>
+        <a href="#eg">Grid</a>
+        <a href="#emh">Menu Hamburger</a>
       </nav>
       <div class="container">
         <h2 id="1">Exercice 1</h2>
@@ -4257,6 +4258,147 @@ main {
         ></iframe>
         <button>
           <a href="./Essai Grid/index.html" target="_blank">Voir le site</a>
+        </button>
+        <h2 id="emh">Essai Menu Hamburger</h2>
+        <pre><code>
+          &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;./styles.css&quot; /&gt;
+    &lt;title&gt;Menu sandwich&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;img
+        src=&quot;https://assets.stickpng.com/images/580b57fcd9996e24bc43c516.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;nav&gt;
+        &lt;a href=&quot;#&quot;&gt;Lien 1&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;Lien 2&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;Lien 3&lt;/a&gt;
+      &lt;/nav&gt;
+      &lt;div id=&quot;menusandwich&quot;&gt;
+        &lt;div id=&quot;upperlayer&quot;&gt;&amp;nbsp;&lt;/div&gt;
+        &lt;div id=&quot;middlelayer&quot;&gt;&amp;nbsp;&lt;/div&gt;
+        &lt;div id=&quot;lowerlayer&quot;&gt;&amp;nbsp;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!--&lt;div id=&quot;menusandwichclose&quot;&gt;
+        &lt;div id=&quot;firstcross&quot;&gt;&amp;nbsp;&lt;/div&gt;
+        &lt;div id=&quot;secondcross&quot;&gt;&amp;nbsp;&lt;/div&gt;
+      &lt;/div&gt;--&gt;
+    &lt;/header&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+        </code></pre>
+        <pre><code>
+          *::before::after {
+            padding: 0;
+            margin: 0;
+          }
+          
+          header {
+            background-color: lightcoral;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+          }
+          
+          header img {
+            height: 40px;
+          }
+          
+          nav {
+            display: none;
+          }
+          
+          #menusandwich {
+            display: flex;
+            flex-direction: column;
+            height: 50px;
+            width: 50px;
+            justify-content: space-around;
+          }
+          
+          #upperlayer {
+            transition: 0.5s ease-in-out;
+            background-color: black;
+            height: 10px;
+            width: 100%;
+            border-radius: 8px;
+          }
+          
+          #middlelayer {
+            transition: 1s ease-in-out;
+            background-color: black;
+            height: 10px;
+            width: 100%;
+            border-radius: 8px;
+          }
+          
+          #lowerlayer {
+            transition: 0.5s ease-in-out;
+            background-color: black;
+            height: 10px;
+            width: 100%;
+            border-radius: 8px;
+          }
+          
+          #menusandwich:hover #middlelayer {
+            transition: 0.3s ease-in-out;
+            opacity: 0;
+          }
+          
+          #menusandwich:hover #upperlayer {
+            transition: 0.5s ease-in-out;
+            transform: rotate(45deg) translateY(24px);
+          }
+          
+          #menusandwich:hover #lowerlayer {
+            transition: 0.5s ease-in-out;
+            transform: rotate(-45deg) translateY(-24px);
+          }
+          
+          @media screen and (min-width: 768px) {
+            header {
+              background-color: lightcyan;
+              height: 60px;
+            }
+          
+            header img {
+              height: 30px;
+            }
+          
+            #menusandwich {
+              display: none;
+            }
+          
+            nav {
+              width: 10%;
+              display: flex;
+              justify-content: space-around;
+            }
+          }
+          
+        </code></pre>
+        <iframe
+          src="./Cours CSS Responsive/essai menu sandwich/index.html"
+          width="98%"
+          height="100%"
+          frameborder="0"
+        ></iframe>
+        <button>
+          <a
+            href="./Cours CSS Responsive/essai menu sandwich/index.html"
+            target="_blank"
+            >Voir le site</a
+          >
         </button>
       </div>
     </main>
