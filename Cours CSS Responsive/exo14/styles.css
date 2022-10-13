@@ -1,0 +1,47 @@
+body {
+  height: 100vh;
+  background-color: lightcoral;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 50vh;
+  width: 70vw;
+  background-color: darkgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: lightgreen;
+}
+
+.circle:nth-child(odd) {
+  transition: ease-in-out 1s;
+  background-color: lightblue;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+}
+
+.circle:nth-child(odd):hover {
+  transition: ease-in-out 1s;
+  background-color: lightseagreen;
+  border-radius: 10%;
+  color: black;
+  box-shadow: lightskyblue 20px 20px;
+}
+
+.magictime {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
