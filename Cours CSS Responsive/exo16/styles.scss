@@ -1,0 +1,28 @@
+@import "variables";
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+  border: 2px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.littleSquare {
+  background-color: $myColor;
+  height: 40px;
+  width: 40px;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: $myThirdColor;
+  height: 200px;
+  width: 200px;
+
+  > h2 {
+    color: $mySecondColor;
+  }
+}
