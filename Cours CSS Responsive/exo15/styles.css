@@ -76,12 +76,12 @@ nav {
 
 #menusandwich:hover #upperlayer {
   transition: 0.5s ease-in-out;
-  transform: rotate(45deg) translateY(12px);
+  transform: rotate(45deg) translateY(8px);
 }
 
 #menusandwich:hover #lowerlayer {
   transition: 0.5s ease-in-out;
-  transform: rotate(-45deg) translateY(-12px);
+  transform: rotate(-45deg) translateY(-9px);
 }
 
 ul {
