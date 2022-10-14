@@ -39,10 +39,10 @@ nav {
 #menusandwich {
   display: flex;
   flex-direction: column;
-  height: 18px;
-  width: 18px;
+  height: 16px;
+  width: 16px;
   justify-content: space-around;
-  padding-top: 26px;
+  padding-top: 19px;
 }
 
 #upperlayer {
@@ -76,12 +76,12 @@ nav {
 
 #menusandwich:hover #upperlayer {
   transition: 0.5s ease-in-out;
-  transform: rotate(45deg) translateY(8px);
+  transform: rotate(45deg) translateY(7.5px);
 }
 
 #menusandwich:hover #lowerlayer {
   transition: 0.5s ease-in-out;
-  transform: rotate(-45deg) translateY(-9px);
+  transform: rotate(-45deg) translateY(-8px);
 }
 
 ul {
