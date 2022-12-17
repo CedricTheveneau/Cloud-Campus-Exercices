@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>First JS exercise</title>
+</head>
+
+<body>
+    <h1>First JS Exercise</h1>
+    <p>See app.js file to discover the exercices</p>
+    <h2>Suite des exercices</h2>
+    <div class="copyingFields">
+        <fieldset>
+            <legend>Copieur</legend>
+            <div class="colFields">
+                <label for="textToCopy">Texte à copier : </label>
+                <input type="text" id="textToCopy" name="textToCopy">
+                <label for="copiedText">Texte copié : </label>
+                <input type="text" id="copiedText" name="copiedText">
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="calcTable">
+        <p>Tableau de calcul</p>
+        <div class="initialValue">
+            <label for="yourValue">Saisissez un nombre : </label>
+            <input type="number" id="yourValue" name="yourValue">
+        </div>
+        <table>
+            <tr>
+                <td>Nombre</td>
+                <td>Carré</td>
+                <td>Cube</td>
+            </tr>
+            <tr>
+                <td id="initialNumber">0</td>
+                <td id="squaredNumber">0</td>
+                <td id="cubicNumber">0</td>
+            </tr>
+        </table>
+    </div>
+    <div class="movingSquare">
+        <p>
+            Moving Square
+        </p>
+        <div id="square">
+            &nbsp;
+        </div>
+        <button id="move">Toggle the moving square animation by clicking RIGHT HERE !</button>
+    </div>
+    <div class="gallery">
+        <p>SHY - Superhero pantheon</p>
+        <div class="allContent">
+            <div id="mainPic">
+                <img src="https://www.justfocus.fr/wp-content/uploads/2021/08/EsBuX7vXIAcAGvZ-696x464.jpg"
+                    alt="SHY heroes display">
+            </div>
+            <div class="picGallery">
+                <img src="https://www.nautiljon.com/images/manga_volumes/00/34/mini/48243.webp?11611617391"
+                    alt="Teru Momijiyama">
+                <img src="https://www.nautiljon.com/images/manga_volumes/00/26/mini/48262.webp?11611617403"
+                    alt="Pepesha">
+                <img src="https://www.nautiljon.com/images/manga_volumes/00/66/mini/51166.webp?11616505604"
+                    alt="Pilz Dunand">
+                <img src="https://www.nautiljon.com/images/manga_volumes/11/87/mini/shy_7946578.webp?11640639616"
+                    alt="Dave Wonder John">
+                <img src="https://www.nautiljon.com/images/manga_volumes/11/38/mini/shy_6943983.webp?11636996147"
+                    alt="Mian Long">
+                <img src="https://www.nautiljon.com/images/manga_volumes/11/33/mini/shy_8948433.webp?11642851758"
+                    alt="Mai">
+            </div>
+        </div>
+    </div>
+    <div class="calculator">
+        <h2>Calculator</h2>
+        <div>
+            <button name="toggleCalc" id="toggleCalc">Show/Hide Calculator</button>
+            <button name="showCalc" id="showCalc">Show calculator</button>
+            <button name="hideCalc" id="hideCalc">Hide calculator</button>
+        </div>
+        <form>
+            <div class="input">
+                <label for="calcInitialNumber">Saisissez un nombre : </label>
+                <input type="number" name="calcInitialNumber" id="calcInitialNumber">
+                <div id="tooltipOne" class="tooltip">Veuilliez saisir un nombre.</div>
+            </div>
+            <div class="input">
+                <label for="mathSignPicker">Choisissez un opérateur : </label>
+                <select name="mathSignPicker" id="mathSignPicker">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <div id="tooltipThree" class="tooltip">Veuilliez choisir un opérateur.</div>
+            </div>
+            <div class="input">
+                <label for="calcSecondNumber">Saisissez un nombre : </label>
+                <input type="number" name="calcSecondNumber" id="calcSecondNumber">
+                <div id="tooltipTwo" class="tooltip">Veuilliez saisir un nombre.</div>
+            </div>
+            <div class="input">
+                <button type="submit" name="askResult" id="askResult">Calculer</button>
+            </div>
+        </form>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
